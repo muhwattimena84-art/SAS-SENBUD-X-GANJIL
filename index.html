@@ -1,0 +1,3786 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAS SENI BUDAYA SMK WALIWA LAIMU TAHUN PELAJARAN 2026/2027</title>
+  <style>
+    /* ==========================================================================
+       DESIGN TOKENS & RESET CSS (100% OFFLINE TANPA CDN EKSTERNAL)
+       ========================================================================== */
+    :root {
+      --navy-950: #091529;
+      --navy-900: #0f2342;
+      --navy-800: #1a365d;
+      --navy-700: #23487a;
+      --navy-100: #e6eef8;
+      --navy-50:  #f3f7fc;
+      --gold-600: #b48618;
+      --gold-500: #d4af37;
+      --gold-400: #eab308;
+      --gold-100: #fef8e2;
+      --art-teal: #0d9488;
+      --art-rose: #e11d48;
+      --art-indigo: #4f46e5;
+      --white: #ffffff;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-300: #cbd5e1;
+      --slate-500: #64748b;
+      --slate-700: #334155;
+      --slate-900: #0f172a;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --warning: #d97706;
+      --warning-bg: #fef3c7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --shadow-sm: 0 2px 6px rgba(15, 35, 66, 0.06);
+      --shadow-md: 0 8px 24px rgba(15, 35, 66, 0.10);
+      --shadow-lg: 0 16px 36px rgba(15, 35, 66, 0.16);
+      --transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--slate-50);
+      color: var(--slate-900);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== */
+    .topbar {
+      background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-900) 60%, var(--navy-800) 100%);
+      color: var(--white);
+      border-bottom: 3px solid var(--gold-500);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-md);
+    }
+
+    .topbar-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      cursor: pointer;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--gold-500), #f59e0b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 0.98rem;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      color: var(--gold-400);
+      line-height: 1.2;
+    }
+
+    .brand-text p {
+      font-size: 0.78rem;
+      color: var(--navy-100);
+      opacity: 0.92;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--slate-200);
+      padding: 0.52rem 0.88rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.83rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition);
+    }
+
+    .nav-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+    }
+
+    .nav-btn.active {
+      background: var(--gold-500);
+      color: var(--navy-950);
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(212, 175, 55, 0.35);
+    }
+
+    /* ==========================================================================
+       MAIN CONTAINER & SECTIONS
+       ========================================================================== */
+    .main-container {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+      flex: 1;
+    }
+
+    .view-section {
+      display: none;
+      animation: fadeSlide 0.28s ease-out;
+    }
+
+    .view-section.active {
+      display: block;
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ==========================================================================
+       HERO BANNER & CARDS (BERANDA)
+       ========================================================================== */
+    .hero-card {
+      background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-800) 55%, #1e3a8a 100%);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 2rem;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 1.75rem;
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(212, 175, 55, 0.18);
+      border: 1px solid var(--gold-500);
+      color: var(--gold-400);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      margin-bottom: 0.85rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.45rem, 2.8vw, 2.15rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.3px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--gold-400);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.65rem;
+      background: rgba(9, 21, 41, 0.55);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      margin-bottom: 1.35rem;
+      font-size: 0.86rem;
+    }
+
+    .hero-meta-item span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--slate-300);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-meta-item strong {
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .hero-art {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ==========================================================================
+       BUTTONS & FORM CONTROLS
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.68rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-500), #f59e0b);
+      color: var(--navy-950);
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-gold:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(212, 175, 55, 0.45);
+    }
+
+    .btn-navy {
+      background: var(--navy-800);
+      color: var(--white);
+      border: 1px solid var(--navy-700);
+    }
+
+    .btn-navy:hover:not(:disabled) {
+      background: var(--navy-900);
+    }
+
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-outline-light:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--navy-900);
+      border: 1.5px solid var(--slate-300);
+    }
+
+    .btn-outline:hover:not(:disabled) {
+      border-color: var(--navy-800);
+      background: var(--navy-50);
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: var(--white);
+    }
+
+    .btn-warning {
+      background: var(--warning);
+      color: var(--white);
+    }
+
+    .btn-danger {
+      background: var(--danger);
+      color: var(--white);
+    }
+
+    .btn-sm {
+      padding: 0.42rem 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    /* ==========================================================================
+       GRID & CARDS
+       ========================================================================== */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-bottom: 0.85rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--slate-200);
+      flex-wrap: wrap;
+    }
+
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--navy-900);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .stat-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.2rem;
+      border: 1px solid var(--slate-200);
+      border-left: 4px solid var(--navy-800);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .stat-card.gold { border-left-color: var(--gold-500); }
+    .stat-card.teal { border-left-color: var(--art-teal); }
+    .stat-card.rose { border-left-color: var(--art-rose); }
+
+    .stat-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--navy-50);
+      color: var(--navy-800);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .stat-info span {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .stat-info strong {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--navy-900);
+    }
+
+    .notice-box {
+      background: var(--gold-100);
+      border: 1px solid var(--gold-500);
+      border-left: 5px solid var(--gold-600);
+      border-radius: var(--radius-sm);
+      padding: 0.9rem 1.1rem;
+      font-size: 0.86rem;
+      color: #5c4308;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    /* ==========================================================================
+       FORMS
+       ========================================================================== */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--navy-900);
+      margin-bottom: 0.35rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.68rem 0.9rem;
+      border: 1.5px solid var(--slate-300);
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      font-family: inherit;
+      color: var(--slate-900);
+      background: var(--white);
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--navy-800);
+      box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.14);
+    }
+
+    /* ==========================================================================
+       EXAM INTERFACE (HALAMAN PELAKSANAAN UJIAN)
+       ========================================================================== */
+    .exam-header-bar {
+      background: var(--navy-900);
+      color: var(--white);
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--gold-500);
+      box-shadow: var(--shadow-md);
+    }
+
+    .timer-pill {
+      background: var(--navy-950);
+      border: 2px solid var(--gold-500);
+      color: var(--gold-400);
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      font-variant-numeric: tabular-nums;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .timer-pill.danger {
+      border-color: var(--danger);
+      color: #fca5a5;
+      animation: pulseWarn 1s infinite;
+    }
+
+    @keyframes pulseWarn {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    .exam-layout {
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .question-box {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .q-meta-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding-bottom: 0.85rem;
+      margin-bottom: 1.1rem;
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    .q-number-badge {
+      background: var(--navy-800);
+      color: var(--white);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+
+    .q-type-badge {
+      background: var(--gold-100);
+      color: #785506;
+      border: 1px solid var(--gold-500);
+      padding: 0.28rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .q-stem {
+      font-size: 1.02rem;
+      color: var(--slate-900);
+      margin-bottom: 1.35rem;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .option-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      padding: 0.88rem 1rem;
+      border: 1.5px solid var(--slate-300);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      background: var(--white);
+      user-select: none;
+    }
+
+    .option-item:hover {
+      border-color: var(--navy-700);
+      background: var(--navy-50);
+    }
+
+    .option-item.selected {
+      border-color: var(--navy-800);
+      background: var(--navy-100);
+      box-shadow: 0 2px 8px rgba(15, 35, 66, 0.1);
+    }
+
+    .option-letter {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--slate-100);
+      color: var(--navy-900);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid var(--slate-300);
+    }
+
+    .option-item.selected .option-letter {
+      background: var(--navy-800);
+      color: var(--gold-400);
+      border-color: var(--navy-800);
+    }
+
+    .exam-nav-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+      padding-top: 1.1rem;
+      border-top: 1px solid var(--slate-200);
+    }
+
+    .nav-grid-panel {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.15rem;
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .q-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.45rem;
+      margin: 0.85rem 0 1rem;
+    }
+
+    .q-num-btn {
+      height: 38px;
+      border-radius: 8px;
+      border: 1.5px solid var(--slate-300);
+      background: var(--white);
+      color: var(--slate-700);
+      font-weight: 700;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .q-num-btn.answered {
+      background: var(--navy-800);
+      color: var(--white);
+      border-color: var(--navy-800);
+    }
+
+    .q-num-btn.doubt {
+      background: var(--gold-400);
+      color: var(--navy-950);
+      border-color: var(--gold-600);
+    }
+
+    .q-num-btn.current {
+      outline: 3px solid var(--gold-500);
+      outline-offset: 1px;
+      transform: scale(1.04);
+    }
+
+    .legend-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      color: var(--slate-700);
+      margin-bottom: 1rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+      border: 1px solid var(--slate-400);
+      display: inline-block;
+    }
+
+    /* ==========================================================================
+       TABLES & BADGES
+       ========================================================================== */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--slate-200);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+      background: var(--white);
+    }
+
+    th {
+      background: var(--navy-900);
+      color: var(--white);
+      text-align: left;
+      padding: 0.78rem 0.85rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 0.72rem 0.85rem;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+
+    tr:hover td {
+      background: var(--slate-50);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.24rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .badge-success { background: var(--success-bg); color: var(--success); }
+    .badge-warning { background: var(--warning-bg); color: var(--warning); }
+    .badge-danger  { background: var(--danger-bg); color: var(--danger); }
+    .badge-navy    { background: var(--navy-100); color: var(--navy-900); }
+    .badge-gold    { background: var(--gold-100); color: #785506; border: 1px solid var(--gold-500); }
+
+    /* ==========================================================================
+       SUBTABS (DASHBOARD & ADMIN)
+       ========================================================================== */
+    .subtabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid var(--slate-200);
+      padding-bottom: 0.65rem;
+    }
+
+    .subtab-btn {
+      padding: 0.52rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--slate-300);
+      background: var(--white);
+      color: var(--slate-700);
+      font-weight: 700;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .subtab-btn.active {
+      background: var(--navy-800);
+      color: var(--gold-400);
+      border-color: var(--navy-800);
+    }
+
+    /* ==========================================================================
+       CERTIFICATE DESIGN
+       ========================================================================== */
+    .cert-wrapper {
+      background: var(--white);
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .certificate-frame {
+      border: 10px double var(--navy-900);
+      outline: 3px solid var(--gold-500);
+      outline-offset: -16px;
+      padding: 2.5rem 2.75rem;
+      background: radial-gradient(circle at top right, #fefce8 0%, #ffffff 45%, #f3f7fc 100%);
+      position: relative;
+      text-align: center;
+      color: var(--navy-950);
+    }
+
+    .cert-header-school {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: var(--navy-900);
+      text-transform: uppercase;
+    }
+
+    .cert-title {
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      font-weight: 900;
+      color: var(--gold-600);
+      letter-spacing: 3px;
+      margin: 0.35rem 0 0.15rem;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .cert-number {
+      font-size: 0.85rem;
+      color: var(--slate-700);
+      font-weight: 600;
+      margin-bottom: 1.35rem;
+    }
+
+    .cert-recipient {
+      font-size: clamp(1.45rem, 3vw, 2.05rem);
+      font-weight: 800;
+      color: var(--navy-900);
+      border-bottom: 2px solid var(--gold-500);
+      display: inline-block;
+      padding: 0.15rem 2rem;
+      margin: 0.45rem 0 0.65rem;
+    }
+
+    .cert-score-box {
+      display: inline-flex;
+      gap: 1.5rem;
+      background: var(--navy-900);
+      color: var(--white);
+      padding: 0.8rem 1.75rem;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--gold-500);
+      margin: 1.15rem 0 1.5rem;
+    }
+
+    .cert-score-item span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--gold-400);
+      text-transform: uppercase;
+    }
+
+    .cert-score-item strong {
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    .cert-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 1.75rem;
+      text-align: left;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .cert-sign {
+      text-align: center;
+      min-width: 230px;
+    }
+
+    /* ==========================================================================
+       MODAL & TOAST NOTIFICATION
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(9, 21, 41, 0.72);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 1rem;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      max-width: 580px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-lg);
+      border-top: 5px solid var(--gold-500);
+    }
+
+    .modal-box.wide {
+      max-width: 880px;
+    }
+
+    .toast-container {
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      z-index: 1200;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-width: 360px;
+    }
+
+    .toast {
+      background: var(--navy-900);
+      color: var(--white);
+      border-left: 4px solid var(--gold-500);
+      padding: 0.8rem 1rem;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-lg);
+      font-size: 0.86rem;
+      animation: fadeSlide 0.2s ease-out;
+    }
+
+    footer.app-footer {
+      background: var(--navy-950);
+      color: var(--slate-300);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      border-top: 2px solid var(--gold-500);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 900px) {
+      .hero-card {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
+      .hero-art {
+        display: none;
+      }
+      .exam-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+      .nav-menu {
+        justify-content: center;
+      }
+      .certificate-frame {
+        padding: 1.25rem;
+      }
+    }
+
+    /* ==========================================================================
+       PRINT STYLES (SERTIFIKAT & LAPORAN)
+       ========================================================================== */
+    @media print {
+      body {
+        background: #ffffff !important;
+      }
+      .topbar, .app-footer, .no-print, .subtabs, .hero-actions {
+        display: none !important;
+      }
+      .main-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      body.print-cert-mode .view-section {
+        display: none !important;
+      }
+      body.print-cert-mode #view-sertifikat {
+        display: block !important;
+      }
+      body.print-cert-mode .cert-wrapper {
+        box-shadow: none !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      body.print-cert-mode .certificate-frame {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP NAVIGATION HEADER
+       ======================================================================== -->
+  <header class="topbar no-print">
+    <div class="topbar-inner">
+      <div class="brand" onclick="navigateTo('beranda')">
+        <div class="brand-icon" aria-hidden="true">
+          <!-- SVG Ikon Palet & Kuas Seni Rupa -->
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#091529" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="13.5" cy="6.5" r=".5" fill="#091529"/>
+            <circle cx="17.5" cy="10.5" r=".5" fill="#091529"/>
+            <circle cx="8.5" cy="7.5" r=".5" fill="#091529"/>
+            <circle cx="6.5" cy="12.5" r=".5" fill="#091529"/>
+            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 id="nav-school-title">SMK WALIWA LAIMU</h1>
+          <p id="nav-subject-subtitle">SAS Ganjil Seni Budaya • Kelas X Fase E (2026/2027)</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu" id="main-nav">
+        <button class="nav-btn active" data-target="beranda" onclick="navigateTo('beranda')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          BERANDA
+        </button>
+        <button class="nav-btn" data-target="mulai-ujian" onclick="navigateTo('mulai-ujian')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          MULAI UJIAN
+        </button>
+        <button class="nav-btn" data-target="hasil-peserta" onclick="navigateTo('hasil-peserta')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          HASIL PESERTA
+        </button>
+        <button class="nav-btn" data-target="dashboard-guru" onclick="requestPinAndGo('dashboard-guru')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          DASHBOARD GURU
+        </button>
+        <button class="nav-btn" data-target="admin" onclick="requestPinAndGo('admin')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          ADMIN
+        </button>
+        <button class="nav-btn" data-target="sertifikat" onclick="navigateTo('sertifikat')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          SERTIFIKAT
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN APPLICATION CONTENT
+       ======================================================================== -->
+  <main class="main-container">
+
+    <!-- ======================================================================
+         1. VIEW: BERANDA
+         ====================================================================== -->
+    <section id="view-beranda" class="view-section active">
+      <div class="hero-card">
+        <div>
+          <div class="hero-badge">
+            <span>✦</span> ASESMEN KURIKULUM MERDEKA • 100% OFFLINE MODE
+          </div>
+          <h2 class="hero-title">SUMATIF AKHIR SEMESTER GANJIL</h2>
+          <div class="hero-subtitle" id="hero-school-line">SMK WALIWA LAIMU • MATA PELAJARAN SENI BUDAYA</div>
+
+          <div class="hero-meta-grid">
+            <div class="hero-meta-item">
+              <span>Satuan Pendidikan</span>
+              <strong id="meta-school">SMK Waliwa Laimu</strong>
+            </div>
+            <div class="hero-meta-item">
+              <span>Guru Pengampu</span>
+              <strong id="meta-teacher">Ishak Mualo, S.H,Gr</strong>
+            </div>
+            <div class="hero-meta-item">
+              <span>Kelas / Fase</span>
+              <strong id="meta-class">Kelas X / Fase E</strong>
+            </div>
+            <div class="hero-meta-item">
+              <span>Tahun Pelajaran</span>
+              <strong id="meta-year">Ganjil 2026/2027</strong>
+            </div>
+            <div class="hero-meta-item">
+              <span>Tanggal Pelaksanaan</span>
+              <strong id="meta-date">26 November 2026</strong>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-gold" onclick="navigateTo('mulai-ujian')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              MULAI UJIAN SEKARANG
+            </button>
+            <button class="btn btn-outline-light" onclick="requestPinAndGo('dashboard-guru', 'kisi')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              Kisi-Kisi &amp; Bank Soal (Guru)
+            </button>
+            <button class="btn btn-outline-light" onclick="requestPinAndGo('dashboard-guru', 'rekap')">
+              Dashboard Guru
+            </button>
+          </div>
+        </div>
+
+        <!-- Ilustrasi SVG Seni Rupa (Kanvas Lukis, Palet, Kuas, Kolase Geometris) -->
+        <div class="hero-art" aria-hidden="true">
+          <svg width="260" height="230" viewBox="0 0 260 230" fill="none">
+            <rect x="20" y="18" width="185" height="150" rx="16" fill="#0f2342" stroke="#d4af37" stroke-width="3"/>
+            <circle cx="72" cy="68" r="24" fill="#eab308" opacity="0.9"/>
+            <path d="M35 148 L88 86 L132 132 L162 98 L192 148 Z" fill="#0d9488"/>
+            <path d="M75 148 L128 96 L185 148 Z" fill="#e11d48" opacity="0.82"/>
+            <rect x="135" y="110" width="95" height="95" rx="20" fill="#ffffff" stroke="#d4af37" stroke-width="3"/>
+            <circle cx="165" cy="140" r="9" fill="#e11d48"/>
+            <circle cx="195" cy="138" r="9" fill="#2563eb"/>
+            <circle cx="202" cy="168" r="9" fill="#eab308"/>
+            <circle cx="168" cy="172" r="9" fill="#0d9488"/>
+            <path d="M145 195 L220 120" stroke="#0f2342" stroke-width="6" stroke-linecap="round"/>
+            <path d="M216 124 L232 108 C236 114 234 122 226 128 Z" fill="#d4af37"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Informasi Statistik Pelaksanaan Ujian -->
+      <div class="grid-4">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div class="stat-info">
+            <span>Jumlah Total Soal</span>
+            <strong id="info-total-soal">35 Soal (30 PG + 5 Essay)</strong>
+          </div>
+        </div>
+        <div class="stat-card gold">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b48618" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="stat-info">
+            <span>Durasi Pengerjaan</span>
+            <strong id="info-durasi">120 Menit</strong>
+          </div>
+        </div>
+        <div class="stat-card teal">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2.2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="stat-info">
+            <span>Bobot Penilaian</span>
+            <strong>60% PG + 40% Essay</strong>
+          </div>
+        </div>
+        <div class="stat-card rose">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="stat-info">
+            <span>Batas Ketuntasan (KKTP)</span>
+            <strong id="info-kkm">Nilai 70</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pemberitahuan Penyimpanan Lokal Offline -->
+      <div class="notice-box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b48618" stroke-width="2.2" style="flex-shrink:0;margin-top:2px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div>
+          <strong>Informasi Sistem Penyimpanan Lokal (100% Offline):</strong>
+          Aplikasi ini berjalan mandiri tanpa koneksi internet maupun server eksternal. Seluruh data jawaban peserta, hasil ujian, dan pengaturan disimpan pada penyimpanan lokal browser (<em>LocalStorage</em>) di perangkat ini. <strong>Penyimpanan lokal browser tidak tersinkronisasi otomatis antarperangkat.</strong> Untuk menggabungkan hasil dari beberapa perangkat HP/Laptop peserta ke perangkat Guru, gunakan fitur <em>Ekspor JSON</em> di halaman Hasil Peserta dan <em>Impor Data</em> pada menu Admin Guru.
+        </div>
+      </div>
+
+      <!-- Petunjuk Penggunaan & Cakupan Tujuan Pembelajaran -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Petunjuk Penggunaan Aplikasi
+            </h3>
+          </div>
+          <ol style="padding-left:1.25rem;display:flex;flex-direction:column;gap:0.55rem;font-size:0.9rem;color:var(--slate-700);">
+            <li><strong>Peserta Didik:</strong> Klik menu <strong>MULAI UJIAN</strong>, isi Nama Lengkap, Kelas, dan Nomor Peserta dengan benar, lalu baca tata tertib sebelum memulai.</li>
+            <li><strong>Penyimpanan Otomatis:</strong> Setiap jawaban Pilihan Ganda maupun Essay otomatis tersimpan. Jika browser tertutup atau dimuat ulang secara tidak sengaja, waktu dan jawaban tetap aman.</li>
+            <li><strong>Integritas Ujian:</strong> Dilarang berpindah tab atau meninggalkan halaman ujian selama sesi berlangsung. Sistem mencatat aktivitas keluar tab sebagai catatan pengawas.</li>
+            <li><strong>Penilaian &amp; Sertifikat:</strong> Nilai Pilihan Ganda dihitung otomatis segera setelah selesai. Nilai Akhir dan Sertifikat Digital resmi terbit setelah Guru menilai jawaban Essay (Nomor 31–35).</li>
+            <li><strong>Guru &amp; Admin:</strong> Gunakan menu <strong>DASHBOARD GURU</strong> atau <strong>ADMIN</strong> (memerlukan otorisasi PIN Guru) untuk melihat kisi-kisi, mengoreksi essay, mencadangkan data, dan mengatur ujian.</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              9 Tujuan Pembelajaran (Capaian Fase E)
+            </h3>
+          </div>
+          <ul style="padding-left:1.2rem;display:flex;flex-direction:column;gap:0.42rem;font-size:0.86rem;color:var(--slate-700);">
+            <li><strong>TP 1:</strong> Mendefinisikan seni rupa dan eksistensinya dalam kehidupan manusia.</li>
+            <li><strong>TP 2:</strong> Menganalisis fungsi seni rupa dalam kehidupan sehari-hari.</li>
+            <li><strong>TP 3:</strong> Mengelompokkan perkembangan seni rupa berdasarkan masa perkembangannya (tradisional, modern, dan kontemporer).</li>
+            <li><strong>TP 4:</strong> Memberikan contoh tujuh karya seni rupa berdasarkan masa perkembangannya.</li>
+            <li><strong>TP 5:</strong> Mendefinisikan fungsi, unsur, dan ragam karya dua dimensi.</li>
+            <li><strong>TP 6:</strong> Mengenal bahan dan teknik dalam pembuatan karya dua dimensi.</li>
+            <li><strong>TP 7:</strong> Menganalisis potensi bahan dari sekitar yang bisa digunakan untuk membuat karya dua dimensi.</li>
+            <li><strong>TP 8:</strong> Membuat karya percobaan menggunakan bahan dari sekitar.</li>
+            <li><strong>TP 9:</strong> Mengevaluasi hasil karya percobaan.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. VIEW: MULAI UJIAN (LOGIN PESERTA & SESI AKTIF)
+         ====================================================================== -->
+    <section id="view-mulai-ujian" class="view-section">
+      <!-- A. FORM LOGIN PESERTA -->
+      <div id="exam-login-panel" style="max-width:680px;margin:0 auto;">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Identitas Peserta Sumatif Akhir Semester Ganjil
+            </h2>
+            <span class="badge badge-gold">Kelas X • Fase E</span>
+          </div>
+
+          <form id="form-login-peserta" onsubmit="handlePrepareExam(event)">
+            <div class="form-group">
+              <label class="form-label" for="inp-nama">Nama Lengkap Peserta *</label>
+              <input type="text" id="inp-nama" class="form-control" placeholder="Contoh: Maria Magdalena Laimu" required />
+            </div>
+
+            <div class="grid-2" style="margin-bottom:0;">
+              <div class="form-group">
+                <label class="form-label" for="inp-kelas">Kelas *</label>
+                <select id="inp-kelas" class="form-control" required>
+                  <option value="" disabled selected>-- Pilih Kelas --</option>
+                  <option value="X.NKPI">X.NKPI</option>
+                  <option value="X.ABPAL">X.ABPAL</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inp-nomor">Nomor Peserta Ujian *</label>
+                <input type="text" id="inp-nomor" class="form-control" placeholder="Contoh: 2026-10-001" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="inp-nisn">NIS / NISN *</label>
+                <input type="text" id="inp-nisn" class="form-control" placeholder="Contoh: 0081234567" required />
+              </div>
+            </div>
+
+            <div style="background:var(--navy-50);border:1px solid var(--navy-100);border-radius:var(--radius-sm);padding:1rem;margin:0.75rem 0 1.25rem;font-size:0.86rem;">
+              <strong style="color:var(--navy-900);display:block;margin-bottom:0.4rem;">Tata Tertib Pelaksanaan Ujian:</strong>
+              <ul style="padding-left:1.2rem;color:var(--slate-700);display:flex;flex-direction:column;gap:0.3rem;">
+                <li>Waktu pengerjaan adalah <strong id="rule-durasi">120 menit</strong> untuk 30 soal Pilihan Ganda dan 5 soal Essay.</li>
+                <li>Kerjakan secara jujur dan mandiri tanpa membuka catatan atau tab peramban lain.</li>
+                <li>Perpindahan tab/jendela browser selama ujian akan memunculkan peringatan dan tercatat otomatis.</li>
+                <li>Apabila waktu hitung mundur habis, sistem akan mengumpulkan jawaban Anda secara otomatis.</li>
+              </ul>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%;padding:0.85rem;font-size:1rem;">
+              LANJUTKAN &amp; KONFIRMASI MULAI UJIAN
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- B. ANTARMUKA PENGERJAAN UJIAN AKTIF -->
+      <div id="exam-active-panel" style="display:none;">
+        <div class="exam-header-bar">
+          <div>
+            <div style="font-size:0.78rem;color:var(--gold-400);font-weight:700;">PESERTA UJIAN AKTIF</div>
+            <div style="font-weight:800;font-size:1rem;" id="active-student-info">-</div>
+            <div style="font-size:0.76rem;color:var(--slate-300);" id="autosave-indicator">✓ Jawaban tersimpan otomatis di perangkat</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+            <span class="badge badge-danger" id="tab-warn-badge" style="display:none;">Peringatan Pindah Tab: 0x</span>
+            <div class="timer-pill" id="exam-timer-display">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span id="timer-clock">120:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exam-layout">
+          <!-- Area Soal Utama -->
+          <div class="question-box">
+            <div class="q-meta-top">
+              <span class="q-number-badge" id="q-curr-label">SOAL NO. 1 DARI 35</span>
+              <span class="q-type-badge" id="q-curr-type">PILIHAN GANDA</span>
+            </div>
+
+            <div class="q-stem" id="q-curr-text">Memuat soal...</div>
+
+            <!-- Kontainer Opsi Pilihan Ganda -->
+            <div class="options-list" id="q-options-container"></div>
+
+            <!-- Kontainer Jawaban Essay -->
+            <div id="q-essay-container" style="display:none;">
+              <label class="form-label" for="essay-answer-input">Tulis Jawaban Uraian / Essay Anda Secara Lengkap dan Jelas:</label>
+              <textarea id="essay-answer-input" class="form-control" rows="7" placeholder="Ketik jawaban essay Anda di sini... Jawaban otomatis tersimpan setiap kali Anda mengetik." oninput="handleEssayInput(this.value)"></textarea>
+              <div style="font-size:0.78rem;color:var(--slate-500);margin-top:0.4rem;">
+                Tips: Jelaskan konsep utama, alasan logis, serta contoh/langkah konkret sesuai pertanyaan.
+              </div>
+            </div>
+
+            <div class="exam-nav-footer">
+              <button type="button" class="btn btn-outline" id="btn-prev-q" onclick="changeQuestion(-1)">
+                ← Sebelumnya
+              </button>
+
+              <button type="button" class="btn btn-warning" id="btn-doubt-q" onclick="toggleDoubt()">
+                ★ Ragu-Ragu
+              </button>
+
+              <button type="button" class="btn btn-navy" id="btn-next-q" onclick="changeQuestion(1)">
+                Berikutnya →
+              </button>
+            </div>
+          </div>
+
+          <!-- Panel Navigasi Nomor Soal 1-35 -->
+          <aside class="nav-grid-panel">
+            <div style="font-weight:800;color:var(--navy-900);font-size:0.95rem;display:flex;justify-content:space-between;align-items:center;">
+              <span>Navigasi Nomor Soal</span>
+              <span class="badge badge-navy" id="nav-progress-badge">0/35</span>
+            </div>
+
+            <div class="q-grid" id="q-number-grid"></div>
+
+            <div class="legend-list">
+              <div class="legend-item"><span class="legend-dot" style="background:var(--navy-800);border-color:var(--navy-800);"></span> Sudah Dijawab</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--gold-400);border-color:var(--gold-600);"></span> Ragu-Ragu</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--white);"></span> Belum Dijawab</div>
+            </div>
+
+            <button type="button" class="btn btn-success" style="width:100%;" onclick="confirmFinishExam()">
+              ✓ SELESAI &amp; KUMPULKAN UJIAN
+            </button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. VIEW: HASIL PESERTA
+         ====================================================================== -->
+    <section id="view-hasil-peserta" class="view-section">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Hasil Pelaksanaan Sumatif Akhir Semester Ganjil
+          </h2>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;" class="no-print">
+            <button class="btn btn-outline btn-sm" onclick="exportResultsCSV()">Ekspor CSV</button>
+            <button class="btn btn-outline btn-sm" onclick="exportBackupJSON()">Ekspor JSON (Kirim ke Guru)</button>
+            <button class="btn btn-navy btn-sm" onclick="window.print()">Cetak Halaman</button>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem;" class="no-print">
+          <input type="text" id="filter-hasil-search" class="form-control" style="max-width:340px;" placeholder="Cari Nama Peserta, Nomor, atau Kelas..." oninput="renderResultsTable()" />
+          <select id="filter-hasil-status" class="form-control" style="max-width:240px;" onchange="renderResultsTable()">
+            <option value="ALL">Semua Status Penilaian</option>
+            <option value="Selesai dinilai">Selesai dinilai</option>
+            <option value="Menunggu penilaian essay">Menunggu penilaian essay</option>
+          </select>
+        </div>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nomor Peserta</th>
+                <th>Nama Lengkap</th>
+                <th>Kelas</th>
+                <th>Nilai PG (60%)</th>
+                <th>Nilai Essay (40%)</th>
+                <th>Nilai Akhir</th>
+                <th>Status Penilaian</th>
+                <th>Ketuntasan</th>
+                <th>Waktu Selesai</th>
+                <th class="no-print">Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-hasil-peserta"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. VIEW: DASHBOARD GURU
+         ====================================================================== -->
+    <section id="view-dashboard-guru" class="view-section">
+      <div class="card" style="margin-bottom:1.25rem;background:linear-gradient(135deg,var(--navy-900),var(--navy-800));color:var(--white);">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+          <div>
+            <span class="badge badge-gold" style="margin-bottom:0.4rem;">PANEL PENDIDIK &amp; ASESMEN</span>
+            <h2 style="font-size:1.35rem;font-weight:800;" id="dash-teacher-name">Ishak Mualo, S.H,Gr</h2>
+            <p style="font-size:0.88rem;color:var(--navy-100);" id="dash-school-info">Guru Mata Pelajaran Seni Budaya • SMK Waliwa Laimu • Kelas X Fase E (2026/2027)</p>
+          </div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;" class="no-print">
+            <button class="btn btn-gold btn-sm" onclick="exportResultsCSV()">Unduh Rekap Nilai (CSV)</button>
+            <button class="btn btn-outline-light btn-sm" onclick="window.print()">Cetak Laporan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistik Ringkas -->
+      <div class="grid-4">
+        <div class="stat-card">
+          <div class="stat-info">
+            <span>Total Peserta Terdata</span>
+            <strong id="stat-total-peserta">0</strong>
+          </div>
+        </div>
+        <div class="stat-card teal">
+          <div class="stat-info">
+            <span>Sudah Mengerjakan Ujian</span>
+            <strong id="stat-sudah-ujian">0</strong>
+          </div>
+        </div>
+        <div class="stat-card rose">
+          <div class="stat-info">
+            <span>Belum Ujian (Terdaftar)</span>
+            <strong id="stat-belum-ujian">0</strong>
+          </div>
+        </div>
+        <div class="stat-card gold">
+          <div class="stat-info">
+            <span>Rata-Rata Nilai Akhir</span>
+            <strong id="stat-rata-nilai">0.0</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-Navigasi Dashboard Guru -->
+      <div class="subtabs no-print">
+        <button class="subtab-btn active" data-subtab="rekap" onclick="switchGuruTab('rekap')">1. Rekapitulasi &amp; Koreksi Essay</button>
+        <button class="subtab-btn" data-subtab="grafik" onclick="switchGuruTab('grafik')">2. Grafik &amp; Analisis Hasil</button>
+        <button class="subtab-btn" data-subtab="kisi" onclick="switchGuruTab('kisi')">3. Kisi-Kisi &amp; Kunci Jawaban Lengkap (35 Soal)</button>
+      </div>
+
+      <!-- Tab 1: Rekap & Koreksi Essay -->
+      <div id="guru-tab-rekap" class="guru-tab-pane">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Rekapitulasi Peserta &amp; Penilaian Essay (Nomor 31–35)</h3>
+            <span style="font-size:0.82rem;color:var(--slate-500);">Klik tombol <strong>Koreksi Essay</strong> untuk memberi skor uraian berdasarkan rubrik.</span>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>No. Peserta</th>
+                  <th>Nama Peserta</th>
+                  <th>Kelas</th>
+                  <th>Benar PG</th>
+                  <th>Nilai PG</th>
+                  <th>Nilai Essay</th>
+                  <th>Nilai Akhir</th>
+                  <th>Status</th>
+                  <th>Pindah Tab</th>
+                  <th class="no-print">Aksi Guru</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-guru-rekap"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Grafik Hasil Ujian (SVG Murni) -->
+      <div id="guru-tab-grafik" class="guru-tab-pane" style="display:none;">
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Grafik Distribusi Predikat Nilai Akhir</h3>
+            </div>
+            <div id="chart-predikat-container" style="padding:0.5rem 0;"></div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Ringkasan Ketuntasan &amp; Status Penilaian</h3>
+            </div>
+            <div id="chart-ketuntasan-container" style="padding:0.5rem 0;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Kisi-Kisi Lengkap & Kunci Jawaban -->
+      <div id="guru-tab-kisi" class="guru-tab-pane" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Tabel Kisi-Kisi, Kunci Jawaban &amp; Rubrik Penilaian (35 Soal)</h3>
+            <button class="btn btn-navy btn-sm no-print" onclick="window.print()">Cetak Kisi-Kisi</button>
+          </div>
+          <div style="margin-bottom:1rem;font-size:0.86rem;color:var(--slate-700);background:var(--navy-50);padding:0.85rem;border-radius:var(--radius-sm);">
+            <strong>Distribusi Level Kognitif:</strong>
+            Pilihan Ganda (30 soal): 12 Level 1 (Pengetahuan/Pemahaman), 10 Level 2 (Penerapan/Aplikasi), 8 Level 3 (Penalaran/HOTS).
+            Essay (5 soal): 2 Level 1, 2 Level 2, 1 Level 3. Seluruh soal terpetakan ke 9 Tujuan Pembelajaran Seni Budaya Fase E.
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Tujuan Pembelajaran (TP)</th>
+                  <th>Materi Pokok</th>
+                  <th>Indikator Soal</th>
+                  <th>Bentuk</th>
+                  <th>Level</th>
+                  <th>Kunci Jawaban / Pedoman &amp; Rubrik</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-kisi-kisi"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. VIEW: ADMIN
+         ====================================================================== -->
+    <section id="view-admin" class="view-section">
+      <div class="subtabs">
+        <button class="subtab-btn active" data-admintab="pengaturan" onclick="switchAdminTab('pengaturan')">1. Pengaturan Identitas &amp; Ujian</button>
+        <button class="subtab-btn" data-admintab="peserta" onclick="switchAdminTab('peserta')">2. Data Peserta Terdaftar</button>
+        <button class="subtab-btn" data-admintab="soal" onclick="switchAdminTab('soal')">3. Kelola Bank Soal &amp; Kunci</button>
+        <button class="subtab-btn" data-admintab="backup" onclick="switchAdminTab('backup')">4. Cadangkan, Impor &amp; Reset</button>
+      </div>
+
+      <!-- Admin Tab 1: Pengaturan -->
+      <div id="admin-tab-pengaturan" class="admin-tab-pane">
+        <div class="card" style="max-width:780px;">
+          <div class="card-header">
+            <h3 class="card-title">Konfigurasi Identitas Sekolah, Guru &amp; Parameter Ujian</h3>
+          </div>
+          <form onsubmit="saveAdminSettings(event)">
+            <div class="grid-2" style="margin-bottom:0;">
+              <div class="form-group">
+                <label class="form-label">Satuan Pendidikan</label>
+                <input type="text" id="cfg-school" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nama Guru Pengampu</label>
+                <input type="text" id="cfg-teacher" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Mata Pelajaran</label>
+                <input type="text" id="cfg-subject" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Kelas / Fase</label>
+                <input type="text" id="cfg-class" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Semester &amp; Tahun Pelajaran</label>
+                <input type="text" id="cfg-year" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Tanggal Pelaksanaan Ujian</label>
+                <input type="text" id="cfg-date" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Durasi Ujian (Menit)</label>
+                <input type="number" id="cfg-duration" class="form-control" min="10" max="240" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Batas Nilai Ketuntasan (KKTP)</label>
+                <input type="number" id="cfg-kkm" class="form-control" min="0" max="100" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">PIN Akses Guru &amp; Admin (Alfanumerik / Simbol)</label>
+                <input type="text" id="cfg-pin" class="form-control" minlength="4" maxlength="20" placeholder="Masukkan kombinasi PIN aman" required />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-gold">Simpan Pengaturan</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Admin Tab 2: Kelola Peserta -->
+      <div id="admin-tab-peserta" class="admin-tab-pane" style="display:none;">
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Tambah Peserta Terdaftar</h3>
+            </div>
+            <form onsubmit="addRegisteredStudent(event)">
+              <div class="form-group">
+                <label class="form-label">Nomor Peserta</label>
+                <input type="text" id="reg-nomor" class="form-control" placeholder="2026-10-001" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nama Lengkap Peserta</label>
+                <input type="text" id="reg-nama" class="form-control" placeholder="Nama lengkap siswa" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Kelas</label>
+                <select id="reg-kelas" class="form-control" required>
+                  <option value="" disabled selected>-- Pilih Kelas --</option>
+                  <option value="X.NKPI">X.NKPI</option>
+                  <option value="X.ABPAL">X.ABPAL</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-navy">Tambah ke Daftar Peserta</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Daftar Peserta &amp; Status Ujian</h3>
+            </div>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No. Peserta</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-registered-students"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Tab 3: Kelola Soal -->
+      <div id="admin-tab-soal" class="admin-tab-pane" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Pengelolaan Bank Soal, Kunci Jawaban &amp; Rubrik (35 Soal)</h3>
+            <span style="font-size:0.82rem;color:var(--slate-500);">Klik Edit pada soal untuk menyesuaikan redaksi, kunci PG, atau skor maksimal essay.</span>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Bentuk</th>
+                  <th>TP &amp; Level</th>
+                  <th>Pertanyaan</th>
+                  <th>Kunci / Skor Maks</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-admin-questions"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Tab 4: Backup, Import, Reset -->
+      <div id="admin-tab-backup" class="admin-tab-pane" style="display:none;">
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Pencadangan &amp; Pemulihan Data (JSON)</h3>
+            </div>
+            <p style="font-size:0.88rem;color:var(--slate-700);margin-bottom:1rem;">
+              Gunakan fitur ini untuk mencadangkan seluruh database aplikasi atau menggabungkan file hasil ujian dari HP/Laptop peserta ke perangkat Guru.
+            </p>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <button class="btn btn-navy" onclick="exportBackupJSON()">Unduh Cadangan Lengkap (.JSON)</button>
+              <div style="border-top:1px solid var(--slate-200);padding-top:0.75rem;">
+                <label class="form-label">Impor / Gabungkan File Cadangan (.JSON)</label>
+                <input type="file" id="inp-import-json" accept=".json" class="form-control" style="margin-bottom:0.5rem;" />
+                <button class="btn btn-gold" onclick="importBackupJSON()">Proses Impor Data JSON</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-color:var(--danger);">
+            <div class="card-header">
+              <h3 class="card-title" style="color:var(--danger);">Reset Data Ujian</h3>
+            </div>
+            <p style="font-size:0.88rem;color:var(--slate-700);margin-bottom:0.85rem;">
+              Tindakan ini akan menghapus seluruh data hasil pengerjaan ujian peserta dari browser ini. Pastikan Anda sudah mencadangkan data terlebih dahulu.
+            </p>
+            <div class="form-group">
+              <label class="form-label">Ketik kata <strong>RESET</strong> untuk mengaktifkan tombol hapus:</label>
+              <input type="text" id="inp-confirm-reset" class="form-control" placeholder="Ketik RESET" oninput="checkResetInput(this.value)" />
+            </div>
+            <button id="btn-execute-reset" class="btn btn-danger" disabled onclick="executeResetData()">Hapus Semua Hasil Ujian</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. VIEW: SERTIFIKAT DIGITAL
+         ====================================================================== -->
+    <section id="view-sertifikat" class="view-section">
+      <div class="card no-print" style="max-width:960px;margin:0 auto 1.25rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.85rem;">
+          <div style="flex:1;min-width:250px;">
+            <label class="form-label" for="select-cert-student">Pilih Peserta (Status "Selesai dinilai"):</label>
+            <select id="select-cert-student" class="form-control" onchange="renderCertificate()"></select>
+          </div>
+          <div style="display:flex;gap:0.6rem;align-items:flex-end;">
+            <button class="btn btn-gold" onclick="printCertificate()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Cetak / Simpan PDF Sertifikat
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-wrapper" id="certificate-display-area">
+        <div class="certificate-frame">
+          <!-- Ornamen SVG Seni Rupa di Tengah Atas Sertifikat -->
+          <div style="margin-bottom:0.5rem;">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#b48618" stroke-width="1.8">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M8.21 13.89L7 22l5-3 5 3-1.21-8.12"/>
+            </svg>
+          </div>
+          <div class="cert-header-school" id="cert-school">SMK WALIWA LAIMU</div>
+          <div class="cert-title">SERTIFIKAT HASIL ASESMEN</div>
+          <div class="cert-number" id="cert-no">Nomor: 001/SAS-SB/SMK-WL/XI/2026</div>
+
+          <p style="font-size:0.95rem;color:var(--slate-700);">Diberikan sebagai bentuk apresiasi capaian kompetensi kepada:</p>
+          <div class="cert-recipient" id="cert-name">Nama Peserta Didik</div>
+          <div style="font-size:0.92rem;font-weight:700;color:var(--slate-700);margin-bottom:0.85rem;" id="cert-class-no">
+            Kelas: X • Nomor Peserta: -
+          </div>
+
+          <p style="max-width:680px;margin:0 auto;font-size:0.93rem;color:var(--slate-800);" id="cert-desc">
+            Telah mengikuti dan menyelesaikan <strong>Sumatif Akhir Semester Ganjil</strong> Mata Pelajaran <strong>Seni Budaya (Fase E)</strong> Tahun Pelajaran <strong>2026/2027</strong> dengan capaian hasil belajar sebagai berikut:
+          </p>
+
+          <div class="cert-score-box">
+            <div class="cert-score-item">
+              <span>Nilai Akhir</span>
+              <strong id="cert-score">0.00</strong>
+            </div>
+            <div style="width:1px;background:rgba(255,255,255,0.25);"></div>
+            <div class="cert-score-item">
+              <span>Predikat</span>
+              <strong id="cert-grade">-</strong>
+            </div>
+            <div style="width:1px;background:rgba(255,255,255,0.25);"></div>
+            <div class="cert-score-item">
+              <span>Keterangan</span>
+              <strong id="cert-status">-</strong>
+            </div>
+          </div>
+
+          <div class="cert-footer">
+            <div style="font-size:0.78rem;color:var(--slate-600);max-width:340px;">
+              <strong>Dokumen Sah Asesmen Internal Sekolah</strong><br/>
+              Tervalidasi melalui Sistem Asesmen Sumatif Akhir Semester Ganjil SMK Waliwa Laimu.
+            </div>
+            <div class="cert-sign">
+              <div style="font-size:0.85rem;" id="cert-date">Laimu, 26 November 2026</div>
+              <div style="font-size:0.85rem;font-weight:700;margin-bottom:2.6rem;">Guru Mata Pelajaran Seni Budaya,</div>
+              <div style="font-weight:800;text-decoration:underline;color:var(--navy-900);" id="cert-teacher">Ishak Mualo, S.H,Gr</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       MODAL DIALOGS (KONFIRMASI, PIN GURU, KOREKSI ESSAY, EDIT SOAL)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal-box" id="modal-content-box"></div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="app-footer no-print">
+    SAS SENI BUDAYA SMK WALIWA LAIMU TAHUN PELAJARAN 2026/2027 • Guru Pengampu: <strong id="footer-teacher">Ishak Mualo, S.H,Gr</strong> • Penyimpanan Lokal Offline
+  </footer>
+
+  <!-- ========================================================================
+       JAVASCRIPT LOGIC (100% VANILLA JS, OFFLINE, COMPLETE ENGINE)
+       ======================================================================== -->
+  <script>
+    /* ========================================================================
+       1. KONFIGURASI DEFAULT & KUNCI LOCALSTORAGE
+       ======================================================================== */
+    const STORAGE_KEYS = {
+      CONFIG: 'sas_sb_2026_config',
+      QUESTIONS: 'sas_sb_2026_questions',
+      RESULTS: 'sas_sb_2026_results',
+      REGISTERED: 'sas_sb_2026_registered',
+      ACTIVE_SESSION: 'sas_sb_2026_active_session'
+    };
+
+    const DEFAULT_CONFIG = {
+      school: 'SMK Waliwa Laimu',
+      teacher: 'Ishak Mualo, S.H,Gr',
+      subject: 'Seni Budaya',
+      classLevel: 'Kelas X / Fase E',
+      year: 'Ganjil 2026/2027',
+      examDate: '26 November 2026',
+      durationMinutes: 120,
+      kkm: 70,
+      pin: 'smk@1234'
+    };
+
+    /* ========================================================================
+       2. BANK SOAL LENGKAP 35 SOAL (30 PG + 5 ESSAY) TERPETAKAN KE 9 TP
+       Distribusi PG: 12 Level 1, 10 Level 2, 8 Level 3
+       Distribusi Essay: 2 Level 1, 2 Level 2, 1 Level 3
+       ======================================================================== */
+    const DEFAULT_QUESTIONS = [
+      // --- TP 1: Mendefinisikan seni rupa dan eksistensinya dalam kehidupan manusia (Soal 1 - 4) ---
+      {
+        id: 1,
+        type: 'PG',
+        tp: 'TP 1: Mendefinisikan seni rupa dan eksistensinya dalam kehidupan manusia',
+        materi: 'Hakikat dan Definisi Seni Rupa',
+        indikator: 'Peserta didik dapat mendefinisikan pengertian seni rupa berdasarkan media ungkap visual dan perabaannya.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Seni rupa merupakan cabang seni yang membentuk karya seni dengan media yang dapat ditangkap oleh mata dan dirasakan dengan rabaan. Kesan tersebut diciptakan dengan mengolah konsep titik, garis, bidang, bentuk, volume, warna, tekstur, dan pencahayaan dengan acuan estetika. Berdasarkan definisi tersebut, elemen utama yang membedakan seni rupa dari seni musik adalah...',
+        options: {
+          A: 'Penggunaan gelombang bunyi dan ritme temporal sebagai medium utama',
+          B: 'Perwujudan ekspresi jiwa ke dalam bentuk visual dan keruangan yang kasat mata',
+          C: 'Gerakan tubuh manusia secara berirama di atas panggung pertunjukan',
+          D: 'Penyampaian dialog dramatik melalui ekspresi vokal dan mimik wajah',
+          E: 'Pengolahan kata-kata puitis yang hanya dinikmati melalui pendengaran'
+        },
+        answer: 'B',
+        explanation: 'Seni rupa bertumpu pada wujud visual (kasat mata) dan keruangan/rabaan, berbeda dengan seni musik yang bertumpu pada bunyi.'
+      },
+      {
+        id: 2,
+        type: 'PG',
+        tp: 'TP 1: Mendefinisikan seni rupa dan eksistensinya dalam kehidupan manusia',
+        materi: 'Eksistensi Seni Rupa Sejak Zaman Prasejarah',
+        indikator: 'Peserta didik dapat menjelaskan bukti eksistensi seni rupa pada kehidupan manusia purba.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Eksistensi seni rupa telah hadir sejak zaman prasejarah, sebagaimana ditemukan pada lukisan cap tangan dan gambar hewan buruan di dinding gua Leang-Leang, Sulawesi Selatan. Fakta sejarah ini membuktikan bahwa...',
+        options: {
+          A: 'Manusia purba telah mengenal sistem perdagangan galeri seni modern',
+          B: 'Seni rupa merupakan kebutuhan naluriah manusia untuk berkomunikasi dan mengekspresikan pengalaman hidup',
+          C: 'Seni rupa hanya dapat berkembang setelah ditemukannya teknologi komputer',
+          D: 'Masyarakat prasejarah melukis semata-mata untuk memperoleh keuntungan finansial',
+          E: 'Karya seni rupa hanya dimiliki oleh kalangan bangsawan kerajaan kuno'
+        },
+        answer: 'B',
+        explanation: 'Lukisan gua prasejarah membuktikan bahwa seni rupa eksis secara naluriah sebagai media komunikasi, ritual, dan ekspresi pengalaman manusia.'
+      },
+      {
+        id: 3,
+        type: 'PG',
+        tp: 'TP 1: Mendefinisikan seni rupa dan eksistensinya dalam kehidupan manusia',
+        materi: 'Eksistensi Seni Rupa dalam Kebudayaan Manusia',
+        indikator: 'Peserta didik dapat menerapkan pemahaman eksistensi seni rupa dalam kehidupan masyarakat modern.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Dalam kehidupan masyarakat masa kini, mulai dari bangun tidur hingga beristirahat kembali, manusia tidak pernah terlepas dari sentuhan seni rupa—seperti desain motif pakaian, tipografi kemasan produk, arsitektur rumah, hingga antarmuka aplikasi ponsel. Fenomena ini menunjukkan eksistensi seni rupa sebagai...',
+        options: {
+          A: 'Aktivitas eksklusif yang hanya berada di dalam museum tertutup',
+          B: 'Bagian integral yang menyatu dengan peradaban dan kebutuhan hidup sehari-hari manusia',
+          C: 'Hiasan tambahan yang tidak memiliki pengaruh terhadap kenyamanan manusia',
+          D: 'Tradisi kuno yang perlahan menghilang akibat kemajuan teknologi digital',
+          E: 'Kegiatan hiburan sesaat tanpa nilai guna maupun nilai budaya'
+        },
+        answer: 'B',
+        explanation: 'Seni rupa menyatu dalam seluruh aspek peradaban manusia, baik dalam benda pakai sehari-hari maupun media komunikasi visual modern.'
+      },
+      {
+        id: 4,
+        type: 'PG',
+        tp: 'TP 1: Mendefinisikan seni rupa dan eksistensinya dalam kehidupan manusia',
+        materi: 'Analisis Eksistensi Seni Rupa di Era Digital',
+        indikator: 'Peserta didik dapat menganalisis pergeseran eksistensi seni rupa pada studi kasus perkembangan teknologi AI dan digital.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Di era digital saat ini, banyak muncul karya visual yang dihasilkan melalui perangkat lunak desain maupun kecerdasan buatan (AI), sehingga sebagian orang beranggapan bahwa eksistensi seniman rupa manual akan punah. Berdasarkan hakikat eksistensi seni rupa dalam kehidupan manusia, analisis yang paling tepat terhadap fenomena tersebut adalah...',
+        options: {
+          A: 'Seni rupa akan punah karena mesin mampu menggantikan seluruh perasaan manusia',
+          B: 'Media dan alat berkarya terus berkembang, namun jiwa, kepekaan rasa, dan gagasan orisinal manusia tetap menjadi roh utama eksistensi seni rupa',
+          C: 'Karya seni rupa sejati hanya sah apabila dibuat menggunakan arang dan batu alam',
+          D: 'Teknologi digital menghapus nilai estetika dalam setiap karya visual manusia',
+          E: 'Seniman tidak lagi perlu mempelajari unsur visual karena teknologi bekerja otomatis'
+        },
+        answer: 'B',
+        explanation: 'Teknologi hanyalah medium/alat baru; eksistensi seni rupa tetap bertumpu pada kepekaan rasa, empati, dan gagasan kreatif manusia.'
+      },
+
+      // --- TP 2: Menganalisis fungsi seni rupa dalam kehidupan sehari-hari (Soal 5 - 8) ---
+      {
+        id: 5,
+        type: 'PG',
+        tp: 'TP 2: Menganalisis fungsi seni rupa dalam kehidupan sehari-hari',
+        materi: 'Fungsi Individu dan Fungsi Sosial Seni Rupa',
+        indikator: 'Peserta didik dapat mengidentifikasi fungsi individual seni rupa sebagai media ekspresi.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Seni rupa memiliki fungsi individual dan fungsi sosial. Yang dimaksud dengan fungsi individual seni rupa adalah...',
+        options: {
+          A: 'Sarana untuk menyampaikan program pembangunan pemerintah kepada masyarakat luas',
+          B: 'Media bagi seniman untuk memenuhi kebutuhan emosional, ekspresi diri, dan kepuasan batin',
+          C: 'Alat peraga pembelajaran di dalam ruang kelas sekolah menengah',
+          D: 'Reklame komersial untuk mempromosikan produk industri di ruang publik',
+          E: 'Sarana upacara adat yang melibatkan seluruh warga desa'
+        },
+        answer: 'B',
+        explanation: 'Fungsi individual berkaitan langsung dengan pemenuhan kebutuhan ekspresi batin, emosional, dan fisik pribadi penciptanya.'
+      },
+      {
+        id: 6,
+        type: 'PG',
+        tp: 'TP 2: Menganalisis fungsi seni rupa dalam kehidupan sehari-hari',
+        materi: 'Seni Rupa Murni dan Terapan',
+        indikator: 'Peserta didik dapat menentukan contoh karya seni rupa yang mengutamakan fungsi praktis/terapan.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Seorang perajin di Maluku menganyam daun pandan menjadi tas noken/bakul berornamen geometris yang kuat dan nyaman dibawa ke pasar. Karya tersebut mengutamakan fungsi...',
+        options: {
+          A: 'Seni murni (fine art) karena hanya dipajang di dinding ruang tamu',
+          B: 'Seni terapan (applied art) karena memadukan nilai kegunaan praktis dan nilai keindahan',
+          C: 'Seni pertunjukan karena digunakan dalam tarian penyambutan tamu',
+          D: 'Seni konseptual yang menolak kegunaan fisik dalam kehidupan sehari-hari',
+          E: 'Seni instalasi yang bersifat sementara di ruang pameran'
+        },
+        answer: 'B',
+        explanation: 'Karya kerajinan anyaman yang dipakai untuk membawa barang mengutamakan fungsi pakai (seni terapan) sekaligus estetika.'
+      },
+      {
+        id: 7,
+        type: 'PG',
+        tp: 'TP 2: Menganalisis fungsi seni rupa dalam kehidupan sehari-hari',
+        materi: 'Fungsi Sosial Seni Rupa (Komunikasi & Edukasi)',
+        indikator: 'Peserta didik dapat menerapkan konsep fungsi sosial seni rupa dalam pemecahan masalah lingkungan sekolah.',
+        level: 'Level 2 (Penerapan)',
+        question: 'OSIS SMK Waliwa Laimu ingin meningkatkan kesadaran siswa tentang bahaya sampah plastik di lingkungan pesisir sekolah. Cara penerapan fungsi sosial seni rupa yang paling efektif untuk tujuan tersebut adalah...',
+        options: {
+          A: 'Menyimpan lukisan pemandangan alam di dalam gudang sekolah',
+          B: 'Membuat mural edukatif dan poster infografis bertema pelestarian laut di dinding strategis sekolah',
+          C: 'Membuat sketsa pribadi di buku harian tanpa diperlihatkan kepada siapa pun',
+          D: 'Membeli patung impor berharga mahal untuk ruang kepala sekolah',
+          E: 'Menghapus seluruh gambar dan simbol rambu kebersihan di halaman sekolah'
+        },
+        answer: 'B',
+        explanation: 'Mural edukatif dan poster infografis di ruang publik berfungsi secara sosial sebagai media komunikasi visual dan edukasi.'
+      },
+      {
+        id: 8,
+        type: 'PG',
+        tp: 'TP 2: Menganalisis fungsi seni rupa dalam kehidupan sehari-hari',
+        materi: 'Analisis Multifungsi Karya Seni Rupa',
+        indikator: 'Peserta didik dapat menganalisis keterpaduan fungsi religi, sosial, dan estetika pada karya arsitektur tradisional.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Rumah adat Baileo di Maluku memiliki ukiran-ukiran simbolik pada tiang dan dindingnya, ruang terbuka tanpa sekat untuk musyawarah masyarakat, serta tata letak yang menghormati nilai spiritual leluhur. Analisis yang tepat mengenai fungsi seni rupa pada bangunan Baileo adalah...',
+        options: {
+          A: 'Hanya berfungsi sebagai tempat tinggal pribadi kepala desa',
+          B: 'Mengintegrasikan fungsi sosial (musyawarah), fungsi religi/spiritual, fungsi simbolik, dan fungsi estetika secara harmonis',
+          C: 'Merupakan karya seni murni modern yang mengabaikan nilai budaya lokal',
+          D: 'Berfungsi murni sebagai pusat transaksi perdagangan komersial',
+          E: 'Ukiran pada Baileo tidak memiliki makna filosofis selain pengisi kekosongan kayu'
+        },
+        answer: 'B',
+        explanation: 'Arsitektur tradisional Baileo memadukan fungsi sosial kemasyarakatan, spiritual/religi, komunikasi simbolik melalui ukiran, dan estetika.'
+      },
+
+      // --- TP 3: Mengelompokkan perkembangan seni rupa berdasarkan masa perkembangannya (Soal 9 - 11) ---
+      {
+        id: 9,
+        type: 'PG',
+        tp: 'TP 3: Mengelompokkan perkembangan seni rupa berdasarkan masa perkembangannya (tradisional, modern, dan kontemporer)',
+        materi: 'Ciri Seni Rupa Tradisional',
+        indikator: 'Peserta didik dapat mengidentifikasi karakteristik utama seni rupa tradisional.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Seni rupa tradisional di Nusantara memiliki ciri khas yang membedakannya dari seni rupa modern. Ciri utama dari seni rupa tradisional adalah...',
+        options: {
+          A: 'Selalu menonjolkan nama individu penciptanya secara mencolok',
+          B: 'Terikat pada pakem/aturan adat yang diwariskan turun-temurun dan bersifat kolektif',
+          C: 'Menolak seluruh nilai budaya lokal dan berfokus pada teknologi digital',
+          D: 'Mengutamakan eksperimen bebas tanpa batas aturan bentuk maupun simbol',
+          E: 'Hanya dibuat menggunakan bahan sintetis pabrikan modern'
+        },
+        answer: 'B',
+        explanation: 'Seni rupa tradisional berpegang pada pakem adat, diwariskan lintas generasi, dan bersifat komunal/kolektif.'
+      },
+      {
+        id: 10,
+        type: 'PG',
+        tp: 'TP 3: Mengelompokkan perkembangan seni rupa berdasarkan masa perkembangannya (tradisional, modern, dan kontemporer)',
+        materi: 'Perbandingan Seni Rupa Tradisional, Modern, dan Kontemporer',
+        indikator: 'Peserta didik dapat mengelompokkan karya seni rupa berdasarkan karakteristik masa perkembangannya.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Perhatikan pernyataan berikut:\n1) Terikat pakem adat dan simbol spiritual daerah.\n2) Mengutamakan kebebasan ekspresi individu dan pembaruan gaya (isme-isme).\n3) Merespons isu sosial kekinian lintas media tanpa sekat batas cabang seni.\nPengelompokan urutan masa perkembangan seni rupa yang tepat berdasarkan ciri 1, 2, dan 3 adalah...',
+        options: {
+          A: 'Modern – Tradisional – Kontemporer',
+          B: 'Tradisional – Modern – Kontemporer',
+          C: 'Kontemporer – Modern – Tradisional',
+          D: 'Tradisional – Kontemporer – Modern',
+          E: 'Modern – Kontemporer – Tradisional'
+        },
+        answer: 'B',
+        explanation: 'Ciri 1 adalah Tradisional (pakem/adat), ciri 2 adalah Modern (kebebasan individu & gaya), dan ciri 3 adalah Kontemporer (isu kekinian lintas media).'
+      },
+      {
+        id: 11,
+        type: 'PG',
+        tp: 'TP 3: Mengelompokkan perkembangan seni rupa berdasarkan masa perkembangannya (tradisional, modern, dan kontemporer)',
+        materi: 'Analisis Seni Rupa Kontemporer',
+        indikator: 'Peserta didik dapat menganalisis alasan suatu karya dikelompokkan ke dalam seni rupa kontemporer.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Seorang seniman muda memamerkan karya berupa ratusan botol plastik bekas jaring nelayan yang disusun menyerupai ombak laut, dilengkapi sensor cahaya dan suara deburan ombak untuk mengkritisi pencemaran laut saat ini. Karya tersebut dikelompokkan ke dalam seni rupa kontemporer karena...',
+        options: {
+          A: 'Mengikuti pakem ukiran klasik kerajaan Nusantara abad ke-14',
+          B: 'Menggunakan media non-konvensional, bersifat lintas disiplin, dan merespons isu aktual masa kini',
+          C: 'Dilukis secara realistis di atas kanvas menggunakan cat minyak konvensional',
+          D: 'Merupakan benda pakai sehari-hari yang diproduksi massal di pabrik',
+          E: 'Tidak memiliki pesan maupun gagasan yang ingin disampaikan kepada penonton'
+        },
+        answer: 'B',
+        explanation: 'Seni kontemporer ditandai kebebasan medium (instalasi/mixed media), lintas disiplin (visual + audio/cahaya), serta respons kritis terhadap isu masa kini.'
+      },
+
+      // --- TP 4: Memberikan contoh tujuh karya seni rupa berdasarkan masa perkembangannya (Soal 12 - 14) ---
+      {
+        id: 12,
+        type: 'PG',
+        tp: 'TP 4: Memberikan contoh tujuh karya seni rupa berdasarkan masa perkembangannya',
+        materi: 'Contoh Karya Seni Rupa Tradisional & Modern Indonesia',
+        indikator: 'Peserta didik dapat mengidentifikasi contoh karya seni rupa tradisional Indonesia.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Berikut ini yang merupakan kelompok contoh karya seni rupa tradisional Nusantara adalah...',
+        options: {
+          A: 'Batik tulis klasik Keraton, ukiran kayu Asmat, dan kain tenun ikat tradisional',
+          B: 'Lukisan kubisme Pablo Picasso, seni instalasi video, dan seni grafis digital',
+          C: 'Lukisan abstrak ekspresionis, seni pop art, dan patung kinetik modern',
+          D: 'Desain poster tipografi digital, animasi 3D, dan fotografi HDR',
+          E: 'Lukisan surealisme Salvador Dali dan instalasi cahaya interaktif'
+        },
+        answer: 'A',
+        explanation: 'Batik tulis klasik Keraton, ukiran Asmat, dan kain tenun ikat adalah warisan karya seni rupa tradisional Nusantara.'
+      },
+      {
+        id: 13,
+        type: 'PG',
+        tp: 'TP 4: Memberikan contoh tujuh karya seni rupa berdasarkan masa perkembangannya',
+        materi: 'Contoh Karya Seni Rupa Modern Indonesia',
+        indikator: 'Peserta didik dapat mengidentifikasi contoh karya lukis modern karya maestro Indonesia.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Lukisan terkenal berjudul "Penangkapan Pangeran Diponegoro" karya Raden Saleh dan lukisan ekspresionis "Barong" karya Affandi merupakan contoh karya seni rupa pada masa...',
+        options: {
+          A: 'Prasejarah batu tua',
+          B: 'Seni rupa modern Indonesia',
+          C: 'Seni rupa primitif animisme',
+          D: 'Seni rupa kriya tradisional keraton',
+          E: 'Seni rupa digital berbasis kecerdasan buatan'
+        },
+        answer: 'B',
+        explanation: 'Raden Saleh (perintis seni lukis modern Indonesia) dan Affandi (maestro ekspresionisme) adalah tokoh seni rupa modern Indonesia.'
+      },
+      {
+        id: 14,
+        type: 'PG',
+        tp: 'TP 4: Memberikan contoh tujuh karya seni rupa berdasarkan masa perkembangannya',
+        materi: 'Klasifikasi Tujuh Contoh Karya Seni Rupa Lintas Masa',
+        indikator: 'Peserta didik dapat mengklasifikasikan contoh karya berdasarkan urutan masa tradisional, modern, hingga kontemporer.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Guru meminta siswa menyajikan contoh tujuh karya seni rupa lintas masa: (1) Lukisan Gua Leang-Leang, (2) Relief Candi Borobudur, (3) Ukiran Toraja, (4) Lukisan "Badai Pasti Berlalu" karya Affandi, (5) Lukisan "Ibu Menjahit" karya S. Sudjojono, (6) Seni Instalasi "Pasar" karya FX Harsono, dan (7) Seni Mural Interaktif Augmented Reality. Dari daftar tersebut, karya nomor 6 dan 7 termasuk contoh seni rupa...',
+        options: {
+          A: 'Tradisional klasik',
+          B: 'Prasejarah megalitikum',
+          C: 'Kontemporer',
+          D: 'Romantisme abad ke-18',
+          E: 'Kriya terapan kuno'
+        },
+        answer: 'C',
+        explanation: 'Instalasi karya FX Harsono dan mural interaktif AR merupakan contoh karya seni rupa kontemporer.'
+      },
+
+      // --- TP 5: Mendefinisikan fungsi, unsur, dan ragam karya dua dimensi (Soal 15 - 18) ---
+      {
+        id: 15,
+        type: 'PG',
+        tp: 'TP 5: Mendefinisikan fungsi, unsur, dan ragam karya dua dimensi',
+        materi: 'Definisi Karya Seni Rupa Dua Dimensi',
+        indikator: 'Peserta didik dapat mendefinisikan ciri ukuran karya seni rupa dua dimensi.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Karya seni rupa dua dimensi (dwimatra) adalah karya seni rupa yang hanya memiliki dua ukuran dan dapat dinikmati dari satu arah pandang (depan). Dua ukuran yang dimaksud adalah...',
+        options: {
+          A: 'Panjang dan tinggi/lebar',
+          B: 'Panjang, lebar, dan volume ruang',
+          C: 'Berat, massa jenis, dan kedalaman nyata',
+          D: 'Tinggi, ketebalan ruang, dan durasi waktu',
+          E: 'Volume, gerak, dan irama bunyi'
+        },
+        answer: 'A',
+        explanation: 'Karya dua dimensi (dwimatra) hanya memiliki ukuran panjang dan lebar (bidang datar) tanpa volume ruang nyata.'
+      },
+      {
+        id: 16,
+        type: 'PG',
+        tp: 'TP 5: Mendefinisikan fungsi, unsur, dan ragam karya dua dimensi',
+        materi: 'Unsur-Unsur Fisik Seni Rupa Dua Dimensi',
+        indikator: 'Peserta didik dapat mengidentifikasi unsur-unsur fisik dalam karya seni rupa dua dimensi.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Unsur paling dasar dalam seni rupa dua dimensi yang apabila ditarik memanjang akan membentuk garis adalah...',
+        options: {
+          A: 'Tekstur semu',
+          B: 'Titik (bintik)',
+          C: 'Gelap terang',
+          D: 'Ruang perspektif',
+          E: 'Warna tersier'
+        },
+        answer: 'B',
+        explanation: 'Titik adalah unsur seni rupa paling dasar; deretan titik yang saling berhimpitan membentuk garis.'
+      },
+      {
+        id: 17,
+        type: 'PG',
+        tp: 'TP 5: Mendefinisikan fungsi, unsur, dan ragam karya dua dimensi',
+        materi: 'Penerapan Unsur Gelap Terang dan Tekstur pada Bidang Datar',
+        indikator: 'Peserta didik dapat menerapkan unsur gelap terang untuk menciptakan kesan volume pada karya dua dimensi.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Ketika seorang siswa menggambar kendi tanah liat di atas kertas gambar (bidang datar) agar tampak bulat, bervolume, dan nyata seperti terkena cahaya matahari dari arah samping, unsur seni rupa yang paling berperan menciptakan ilusi tiga dimensi tersebut adalah...',
+        options: {
+          A: 'Garis lurus horizontal yang kaku',
+          B: 'Gelap terang (value/gradasi pencahayaan) dan bayangan',
+          C: 'Warna primer datar tanpa gradasi',
+          D: 'Bidang geometris persegi panjang',
+          E: 'Titik-titik acak di sudut kertas'
+        },
+        answer: 'B',
+        explanation: 'Unsur gelap terang (gradasi cahaya dan bayangan) menciptakan ilusi volume/kedalaman pada permukaan dua dimensi.'
+      },
+      {
+        id: 18,
+        type: 'PG',
+        tp: 'TP 5: Mendefinisikan fungsi, unsur, dan ragam karya dua dimensi',
+        materi: 'Ragam Karya Seni Rupa Dua Dimensi',
+        indikator: 'Peserta didik dapat membedakan ragam karya seni rupa dua dimensi berdasarkan teknik dan fungsinya.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Perhatikan ragam karya berikut: (1) Seni Lukis, (2) Seni Grafis (cetak saring/cukil), (3) Desain Komunikasi Visual (poster/ilustrasi), (4) Seni Batik. Keempat ragam karya tersebut digolongkan sebagai karya seni rupa dua dimensi karena...',
+        options: {
+          A: 'Semuanya dibuat dengan cara memahat batu atau kayu secara mendalam',
+          B: 'Perwujudannya menempati bidang datar (panjang × lebar) dan diamati dari arah depan',
+          C: 'Dapat dikelilingi dan dilihat bentuknya dari segala penjuru 360 derajat',
+          D: 'Hanya menggunakan satu warna hitam tanpa unsur visual lainnya',
+          E: 'Tidak memiliki fungsi estetika maupun fungsi komunikasi'
+        },
+        answer: 'B',
+        explanation: 'Seni lukis, grafis, DKV, dan batik diwujudkan pada bidang datar (kanvas, kertas, kain) dan dinikmati dari arah depan.'
+      },
+
+      // --- TP 6: Mengenal bahan dan teknik dalam pembuatan karya dua dimensi (Soal 19 - 22) ---
+      {
+        id: 19,
+        type: 'PG',
+        tp: 'TP 6: Mengenal bahan dan teknik dalam pembuatan karya dua dimensi',
+        materi: 'Teknik Melukis (Aquarel dan Plakat)',
+        indikator: 'Peserta didik dapat membedakan teknik aquarel dan teknik plakat dalam melukis.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Dalam teknik melukis menggunakan cat air (watercolor) dengan sapuan warna yang tipis, encer, dan transparan sehingga warna kertas masih tampak membayang disebut teknik...',
+        options: {
+          A: 'Plakat',
+          B: 'Aquarel',
+          C: 'Pointilis',
+          D: 'Impasto',
+          E: 'Semprot (airbrush)'
+        },
+        answer: 'B',
+        explanation: 'Teknik aquarel menggunakan sapuan cat tipis dan transparan dengan pengencer air.'
+      },
+      {
+        id: 20,
+        type: 'PG',
+        tp: 'TP 6: Mengenal bahan dan teknik dalam pembuatan karya dua dimensi',
+        materi: 'Teknik Seni Rupa Dua Dimensi (Kolase, Mozaik, Montase)',
+        indikator: 'Peserta didik dapat membedakan teknik kolase dan mozaik berdasarkan bahan yang ditempel.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Teknik pembuatan karya seni rupa dua dimensi dengan cara menempelkan berbagai macam bahan yang berbeda jenis (seperti potongan kain perca, daun kering, biji-bijian, dan kertas) pada satu bidang gambar disebut teknik...',
+        options: {
+          A: 'Arsir',
+          B: 'Kolase',
+          C: 'Dussel',
+          D: 'Cetak tinggi',
+          E: 'Linier'
+        },
+        answer: 'B',
+        explanation: 'Kolase memadukan aneka ragam material berbeda jenis yang ditempelkan pada satu permukaan gambar.'
+      },
+      {
+        id: 21,
+        type: 'PG',
+        tp: 'TP 6: Mengenal bahan dan teknik dalam pembuatan karya dua dimensi',
+        materi: 'Pemilihan Bahan dan Teknik Menggambar',
+        indikator: 'Peserta didik dapat menentukan teknik menggambar yang tepat sesuai karakter alat gambar kering.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Seorang siswa ingin membuat gambar sketsa wajah menggunakan pensil grafit (2B–6B) dengan efek gradasi halus tanpa terlihat garis-garis goresan yang tegas. Teknik menggambar yang paling sesuai diterapkan oleh siswa tersebut adalah...',
+        options: {
+          A: 'Teknik blok (siluet) menggunakan tinta hitam pekat',
+          B: 'Teknik dussel (gosok) menggunakan kapas atau jari tangan pada goresan pensil',
+          C: 'Teknik cetak saring (sablon) menggunakan screen dan rakel',
+          D: 'Teknik ukir pahat pada papan kayu jati',
+          E: 'Teknik anyam silang menggunakan bilah bambu'
+        },
+        answer: 'B',
+        explanation: 'Teknik dussel menggosok goresan pensil/konte menggunakan kapas, kertas tisu, atau jari untuk menghasilkan gradasi halus.'
+      },
+      {
+        id: 22,
+        type: 'PG',
+        tp: 'TP 6: Mengenal bahan dan teknik dalam pembuatan karya dua dimensi',
+        materi: 'Analisis Kesesuaian Bahan dan Teknik Karya Dua Dimensi',
+        indikator: 'Peserta didik dapat menganalisis penyebab kegagalan teknis pemilihan media dan bahan dalam melukis.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Dika melukis menggunakan cat air dengan teknik aquarel yang banyak mengandung air di atas kertas HVS tipis 70 gram. Akibatnya, kertas menjadi bergelombang, melengkung, bahkan robek saat disapu kuas berulang kali. Analisis solusi teknis yang paling tepat agar masalah tersebut tidak terulang adalah...',
+        options: {
+          A: 'Mengganti kertas HVS tipis dengan kertas khusus cat air (watercolor paper) bergramasi tebal ≥ 200 gsm',
+          B: 'Menambahkan lebih banyak air hingga menggenang di atas kertas HVS 70 gram',
+          C: 'Menggunakan pisau palet besi untuk menggores permukaan kertas HVS tipis',
+          D: 'Mengganti kuas bulu halus dengan sikat kawat kasar',
+          E: 'Menjemur kertas HVS basah langsung di atas api kompor'
+        },
+        answer: 'A',
+        explanation: 'Teknik aquarel membutuhkan kertas bergramasi tebal (≥ 200 gsm) berdaya serap tinggi agar tidak bergelombang atau sobek.'
+      },
+
+      // --- TP 7: Menganalisis potensi bahan dari sekitar yang bisa digunakan untuk membuat karya dua dimensi (Soal 23 - 25) ---
+      {
+        id: 23,
+        type: 'PG',
+        tp: 'TP 7: Menganalisis potensi bahan dari sekitar yang bisa digunakan untuk membuat karya dua dimensi',
+        materi: 'Identifikasi Bahan Alam dan Limbah Sekitar',
+        indikator: 'Peserta didik dapat mengidentifikasi potensi bahan alam lokal untuk karya dua dimensi.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Lingkungan sekitar sekolah di wilayah pesisir dan pedesaan menyediakan beragam bahan alam maupun limbah yang berpotensi dijadikan media karya dua dimensi. Berikut ini pasangan bahan sekitar dan potensi pemanfaatannya yang tepat adalah...',
+        options: {
+          A: 'Pelepah pisang kering – memiliki serat alami dan gradasi warna cokelat alami untuk kolase',
+          B: 'Air laut bening – digunakan sebagai lem perekat kerikil berat di atas kertas tipis',
+          C: 'Batu karang besar – digunakan sebagai kertas gambar lipat',
+          D: 'Asap kendaraan – digunakan sebagai pengganti bingkai kayu lukisan',
+          E: 'Pasir basah tanpa perekat – ditempelkan langsung di atas kaca vertikal'
+        },
+        answer: 'A',
+        explanation: 'Pelepah pisang kering memiliki tekstur serat unik dan gradasi cokelat alami yang sangat kuat untuk karya kolase dua dimensi.'
+      },
+      {
+        id: 24,
+        type: 'PG',
+        tp: 'TP 7: Menganalisis potensi bahan dari sekitar yang bisa digunakan untuk membuat karya dua dimensi',
+        materi: 'Analisis Potensi Bahan Pewarna Alami Sekitar',
+        indikator: 'Peserta didik dapat menganalisis keunggulan dan keterbatasan pigmen pewarna alami dari tumbuhan sekitar.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Kelompok seni rupa kelas X mengidentifikasi kunyit (kuning), daun suji (hijau), bunga telang (biru keunguan), dan arang tempurung kelapa (hitam) sebagai alternatif pewarna karya dua dimensi. Jika ditinjau dari potensi serta karakteristik bahannya, analisis yang paling tepat sebelum menggunakan bahan-bahan tersebut adalah...',
+        options: {
+          A: 'Pewarna alami memiliki warna yang tidak pernah pudar meskipun dijemur terik matahari bertahun-tahun',
+          B: 'Pewarna alami ramah lingkungan dan mudah didapat di sekitar, namun membutuhkan proses ekstraksi serta bahan pengikat/fiksasi agar warna melekat kuat dan tidak cepat pudar',
+          C: 'Kunyit dan daun suji dapat langsung digoreskan dalam keadaan kering tanpa diekstrak sarinya',
+          D: 'Arang tempurung kelapa harus dicampur bensin agar dapat menempel pada kertas gambar',
+          E: 'Semua tumbuhan di sekitar menghasilkan warna biru terang apabila direbus dengan garam'
+        },
+        answer: 'B',
+        explanation: 'Pigmen tumbuhan ramah lingkungan dan ekonomis, namun memerlukan ekstraksi dan zat pengikat (binder/fiksator) agar daya rekat dan ketahanan warnanya optimal.'
+      },
+      {
+        id: 25,
+        type: 'PG',
+        tp: 'TP 7: Menganalisis potensi bahan dari sekitar yang bisa digunakan untuk membuat karya dua dimensi',
+        materi: 'Analisis Limbah Anorganik dan Organik Pesisir',
+        indikator: 'Peserta didik dapat memilih dan menganalisis potensi limbah sekitar berdasarkan aspek keamanan, estetika, dan ketersediaan.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Di sekitar lingkungan SMK Waliwa Laimu terdapat melimpah serbuk gergaji kayu dari bengkel pertukangan, cangkang kerang kecil di pantai, dan potongan kain perca dari penjahit desa. Apabila siswa ingin membuat lukisan tekstur dua dimensi yang tahan lama di atas papan tripleks, analisis pemilihan bahan yang paling rasional adalah...',
+        options: {
+          A: 'Menggunakan daun pisang segar basah karena mudah membusuk dalam dua hari',
+          B: 'Memanfaatkan kombinasi serbuk gergaji kayu dan cangkang kerang kecil yang telah dibersihkan serta dikeringkan karena bertekstur kaya, tahan lama, dan melimpah di sekitar',
+          C: 'Membeli cat akrilik impor dari luar negeri agar terlihat mewah meskipun mahal',
+          D: 'Menggunakan pecahan kaca tajam tanpa dihaluskan untuk ditempel di ruang kelas TK',
+          E: 'Menggunakan sisa makanan basah sebagai pengganti lem kayu'
+        },
+        answer: 'B',
+        explanation: 'Serbuk gergaji dan cangkang kerang kecil yang dibersihkan & dikeringkan memenuhi kriteria ketersediaan lokal, estetika tekstur, keamanan, dan daya tahan.'
+      },
+
+      // --- TP 8: Membuat karya percobaan menggunakan bahan dari sekitar (Soal 26 - 28) ---
+      {
+        id: 26,
+        type: 'PG',
+        tp: 'TP 8: Membuat karya percobaan menggunakan bahan dari sekitar',
+        materi: 'Tahapan Pembuatan Karya Percobaan Dua Dimensi',
+        indikator: 'Peserta didik dapat mengurutkan prosedur kerja pembuatan karya percobaan kolase bahan alam.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Perhatikan langkah-langkah pembuatan karya percobaan kolase dari daun kering dan biji-bijian berikut:\n1) Menempelkan bahan pada pola menggunakan perekat sesuai komposisi warna dan tekstur.\n2) Membuat sketsa desain gambar pada bidang alas (karton tebal/tripleks).\n3) Mengumpulkan, membersihkan, dan mengeringkan bahan alam dari lingkungan sekitar.\n4) Melakukan finishing (pelapisan pelindung/vernis) dan merapikan tepi karya.\nUrutan prosedur berkarya yang sistematis dan benar adalah...',
+        options: {
+          A: '1 – 2 – 3 – 4',
+          B: '3 – 2 – 1 – 4',
+          C: '2 – 4 – 1 – 3',
+          D: '4 – 3 – 2 – 1',
+          E: '3 – 1 – 4 – 2'
+        },
+        answer: 'B',
+        explanation: 'Prosedur yang tepat: siapkan/keringkan bahan (3) → buat sketsa pola pada alas (2) → tempel bahan sesuai komposisi (1) → finishing pelindung (4).'
+      },
+      {
+        id: 27,
+        type: 'PG',
+        tp: 'TP 8: Membuat karya percobaan menggunakan bahan dari sekitar',
+        materi: 'Teknik Pengolahan Bahan Alam dalam Karya Percobaan',
+        indikator: 'Peserta didik dapat menerapkan langkah perlakuan awal bahan organik sebelum ditempel pada karya percobaan.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Saat membuat karya percobaan menggunakan pelepah pisang atau dedaunan dari sekitar sekolah, bahan tersebut wajib dijemur atau dikeringkan terlebih dahulu sebelum ditempel pada bidang karya. Tujuan utama dari proses pengeringan tersebut adalah...',
+        options: {
+          A: 'Agar daun berubah menjadi transparan seperti kaca bening',
+          B: 'Mencegah munculnya jamur, pembusukan, serta penyusutan bentuk setelah karya selesai ditempel',
+          C: 'Supaya berat karya bertambah menjadi berkali-kali lipat',
+          D: 'Agar perekat lem tidak dapat menempel pada permukaan kertas',
+          E: 'Menghilangkan seluruh tekstur serat alami pada permukaan daun'
+        },
+        answer: 'B',
+        explanation: 'Pengeringan mengurangi kadar air sehingga bahan tidak berjamur, tidak membusuk, dan tidak menyusut/mengkerut setelah direkatkan.'
+      },
+      {
+        id: 28,
+        type: 'PG',
+        tp: 'TP 8: Membuat karya percobaan menggunakan bahan dari sekitar',
+        materi: 'Pemecahan Masalah Teknis Saat Eksperimen Karya',
+        indikator: 'Peserta didik dapat memecahkan kendala daya rekat bahan eksperimen pada karya dua dimensi.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Dalam sesi praktik karya percobaan, kelompok Sari menggunakan biji jagung kering dan cangkang kerang kecil di atas karton tebal. Mereka menggunakan lem kertas cair biasa, namun keesokan harinya banyak biji dan kerang yang terlepas saat karya diberdirikan. Keputusan eksperimental yang paling tepat untuk mengatasi masalah tersebut adalah...',
+        options: {
+          A: 'Mengganti jenis perekat dengan lem kayu putih (PVAc) atau lem tembak yang memiliki daya rekat kuat untuk material bertekstur berat',
+          B: 'Menyiram permukaan karton dengan air sabun agar biji menjadi lunak',
+          C: 'Mengurangi jumlah lem menjadi setipis mungkin di ujung biji saja',
+          D: 'Menyimpan karya secara terbalik menghadap ke lantai tanpa perekat',
+          E: 'Mengganti karton tebal dengan kertas tisu tipis'
+        },
+        answer: 'A',
+        explanation: 'Material bervolume dan agak berat seperti biji jagung dan cangkang kerang memerlukan lem berdaya ikat kuat (lem PVAc/lem tembak), bukan lem kertas biasa.'
+      },
+
+      // --- TP 9: Mengevaluasi hasil karya percobaan (Soal 29 - 30) ---
+      {
+        id: 29,
+        type: 'PG',
+        tp: 'TP 9: Mengevaluasi hasil karya percobaan',
+        materi: 'Aspek Evaluasi dan Apresiasi Karya Percobaan',
+        indikator: 'Peserta didik dapat mengidentifikasi aspek-aspek penting dalam mengevaluasi hasil karya percobaan dua dimensi.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Kegiatan mengevaluasi hasil karya percobaan seni rupa dua dimensi bertujuan untuk menilai keberhasilan proses kreatif dan kualitas hasil akhir. Berikut ini yang merupakan kriteria objektif dalam mengevaluasi karya percobaan adalah...',
+        options: {
+          A: 'Harga jual bingkai dan merek pakaian yang dikenakan pembuat karya',
+          B: 'Kesesuaian ide dengan tema, komposisi unsur visual, kerapian teknik pengerjaan, serta kreativitas pemanfaatan bahan',
+          C: 'Kedekatan hubungan pertemanan antara penilai dan pembuat karya',
+          D: 'Ukuran karya yang harus selalu lebih besar dari dua meter',
+          E: 'Banyaknya biaya yang dikeluarkan untuk membeli bahan dari luar kota'
+        },
+        answer: 'B',
+        explanation: 'Evaluasi karya seni rupa menilai aspek gagasan/tema, komposisi estetika, teknik/kerapian, serta kreativitas eksplorasi bahan.'
+      },
+      {
+        id: 30,
+        type: 'PG',
+        tp: 'TP 9: Mengevaluasi hasil karya percobaan',
+        materi: 'Evaluasi Kritis dan Rekomendasi Perbaikan Karya Percobaan',
+        indikator: 'Peserta didik dapat memberikan evaluasi konstruktif dan saran perbaikan terhadap studi kasus karya percobaan.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Studi Kasus: Pada pameran kelas, sebuah karya kolase bertema "Keindahan Bawah Laut" menggunakan ampas kelapa yang diwarnai dan serbuk kayu. Secara ide dan tekstur karya tersebut sangat kreatif, namun objek ikan utama tampak menyatu dengan latar belakang sehingga sulit dikenali dari jarak pandang dua meter, dan beberapa bagian tepi tampak kurang rapi. Bentuk evaluasi kritis dan saran perbaikan yang paling konstruktif adalah...',
+        options: {
+          A: 'Karya tersebut gagal total sehingga harus segera dibuang dan tidak perlu dipamerkan',
+          B: 'Eksplorasi bahan sudah sangat kreatif, namun perlu penguatan kontras warna/gelap terang antara objek ikan dan latar belakang serta perapian finishing tepi agar fokus visual lebih jelas',
+          C: 'Sebaiknya seluruh ampas kelapa dilepas dan diganti dengan cetak foto dari printer',
+          D: 'Karya sudah sempurna tanpa kekurangan apa pun sehingga tidak perlu ada masukan',
+          E: 'Pengamat disarankan melihat karya menggunakan kaca pembesar dari jarak lima sentimeter'
+        },
+        answer: 'B',
+        explanation: 'Evaluasi konstruktif mengapresiasi kekuatan karya (kreativitas bahan) sekaligus memberikan solusi teknis spesifik (kontras warna/gelap terang dan kerapian tepi).'
+      },
+
+      // ======================================================================
+      // SOAL ESSAY (NOMOR 31 - 35): 2 Level 1, 2 Level 2, 1 Level 3
+      // ======================================================================
+      {
+        id: 31,
+        type: 'ESSAY',
+        tp: 'TP 1 & TP 2: Definisi, eksistensi, dan fungsi seni rupa dalam kehidupan sehari-hari',
+        materi: 'Eksistensi dan Fungsi Seni Rupa dalam Kehidupan Sehari-hari',
+        indikator: 'Peserta didik dapat menjelaskan definisi seni rupa serta menguraikan dua fungsi utamanya dalam kehidupan sehari-hari.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Jelaskan pengertian seni rupa secara lengkap, kemudian uraikan perbedaan antara fungsi individual dan fungsi sosial seni rupa dalam kehidupan sehari-hari beserta masing-masing satu contoh konkret di lingkungan sekitar Anda!',
+        maxScore: 20,
+        answerGuide: '1) Pengertian Seni Rupa: Cabang seni yang diwujudkan dalam bentuk visual dan keruangan yang dapat ditangkap oleh indra penglihatan (mata) dan indra perabaan melalui pengolahan unsur titik, garis, bidang, bentuk, warna, tekstur, dan gelap terang.\n2) Fungsi Individual: Pemenuhan kebutuhan emosional, ekspresi diri, dan kepuasan batin penciptanya (Contoh: membuat lukisan/sketsa untuk mengekspresikan perasaan).\n3) Fungsi Sosial: Sarana komunikasi, edukasi, religi, rekreasi, maupun guna pakai bagi masyarakat luas (Contoh: poster/mural imbauan menjaga kebersihan lingkungan sekolah atau ukiran rumah adat).',
+        rubric: 'Skor 20: Definisi tepat & lengkap (6), perbedaan fungsi individual & sosial jelas (8), kedua contoh konkret & relevan (6).\nSkor 14-19: Konsep benar namun salah satu contoh kurang rinci.\nSkor 8-13: Hanya menjelaskan sebagian definisi atau satu fungsi saja.\nSkor 1-7: Jawaban kurang relevan / sangat singkat.\nSkor 0: Tidak menjawab.'
+      },
+      {
+        id: 32,
+        type: 'ESSAY',
+        tp: 'TP 3 & TP 4: Perkembangan seni rupa dan contoh karya lintas masa',
+        materi: 'Perkembangan Seni Rupa Tradisional, Modern, dan Kontemporer',
+        indikator: 'Peserta didik dapat menjelaskan perbedaan karakteristik seni rupa tradisional, modern, dan kontemporer serta menyebutkan contoh karyanya.',
+        level: 'Level 1 (Pengetahuan)',
+        question: 'Jelaskan perbedaan karakteristik utama antara seni rupa tradisional, seni rupa modern, dan seni rupa kontemporer, serta berikan masing-masing dua contoh karyanya!',
+        maxScore: 20,
+        answerGuide: '1) Seni Rupa Tradisional: Terikat pakem adat, bersifat kolektif/anonim, diwariskan turun-temurun, dan sarat makna simbolik/spiritual. Contoh: Batik tulis klasik, ukiran kayu tradisional, kain tenun ikat.\n2) Seni Rupa Modern: Mengutamakan kebebasan ekspresi individu seniman, pembaruan gaya (aliran/isme), dan pencantuman identitas seniman. Contoh: Lukisan "Penangkapan Pangeran Diponegoro" (Raden Saleh), lukisan ekspresionis Affandi.\n3) Seni Rupa Kontemporer: Berkembang pada masa kini, bebas melintasi batas medium/cabang seni, serta merespons isu sosial/lingkungan aktual. Contoh: Seni instalasi limbah plastik, seni mural interaktif digital/AR.',
+        rubric: 'Skor 20: Tiga karakteristik masa dijelaskan tepat (12) dan masing-masing 2 contoh karya akurat (8).\nSkor 14-19: Karakteristik tepat namun contoh karya hanya 1 per masa.\nSkor 8-13: Hanya menjelaskan 2 masa perkembangan dengan benar.\nSkor 1-7: Jawaban tidak terstruktur atau tertukar konsepnya.\nSkor 0: Tidak menjawab.'
+      },
+      {
+        id: 33,
+        type: 'ESSAY',
+        tp: 'TP 5 & TP 6: Unsur, ragam, bahan, dan teknik karya seni rupa dua dimensi',
+        materi: 'Unsur Visual dan Teknik Pembuatan Karya Dua Dimensi',
+        indikator: 'Peserta didik dapat menerapkan konsep unsur visual dan memilih teknik berkarya dua dimensi yang sesuai untuk pembuatan poster edukasi.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Anda ditugaskan membuat sebuah poster edukasi dua dimensi bertema "Generasi Muda SMK Waliwa Laimu Peduli Budaya Lokal". Jelaskan bagaimana Anda menerapkan minimal empat unsur seni rupa dua dimensi (garis, warna, bidang, gelap terang/tekstur) serta teknik pembuatan yang Anda pilih agar poster tersebut menarik dan komunikatif!',
+        maxScore: 20,
+        answerGuide: '1) Penerapan Unsur Visual:\n- Garis: Garis tegas dan dinamis untuk mengarahkan pandangan pembaca ke judul utama.\n- Warna: Perpaduan warna kontras (misal biru navy dan emas/kuning cerah) agar tulisan terbaca jelas dan membangkitkan semangat.\n- Bidang & Bentuk: Pembagian bidang proporsional antara ilustrasi ikon budaya lokal dan ruang teks.\n- Gelap Terang: Gradasi pada objek ilustrasi agar tampak hidup dan menonjol.\n2) Teknik Pembuatan: Misalnya teknik plakat menggunakan cat poster/akrilik untuk menghasilkan warna pekat merata, atau teknik campuran (mixed media/kolase) agar tampilan lebih atraktif.',
+        rubric: 'Skor 20: Menguraikan ≥4 unsur visual secara aplikatif sesuai tema (12) dan menjelaskan pilihan teknik beserta alasannya secara logis (8).\nSkor 14-19: Menguraikan 3 unsur visual dan teknik dengan baik.\nSkor 8-13: Hanya menyebutkan unsur secara definisi umum tanpa penerapan pada tema poster.\nSkor 1-7: Jawaban sangat minim.\nSkor 0: Tidak menjawab.'
+      },
+      {
+        id: 34,
+        type: 'ESSAY',
+        tp: 'TP 7 & TP 8: Potensi bahan sekitar dan rancangan karya percobaan dua dimensi',
+        materi: 'Eksplorasi Bahan Sekitar untuk Karya Percobaan Dua Dimensi',
+        indikator: 'Peserta didik dapat merancang langkah pembuatan karya percobaan dua dimensi menggunakan bahan alam/limbah dari lingkungan sekitar.',
+        level: 'Level 2 (Penerapan)',
+        question: 'Identifikasilah tiga jenis bahan alam atau limbah yang mudah ditemukan di lingkungan sekitar sekolah/tempat tinggal Anda, lalu susunlah rancangan langkah-langkah pembuatan sebuah karya percobaan dua dimensi (misalnya kolase/lukisan tekstur) menggunakan bahan-bahan tersebut mulai dari persiapan hingga tahap finishing!',
+        maxScore: 20,
+        answerGuide: '1) Identifikasi 3 Bahan Sekitar: Contoh: pelepah pisang kering, serbuk gergaji kayu, biji-bijian kering/cangkang kerang kecil.\n2) Rancangan Langkah Pembuatan:\n- Tahap Persiapan: Mengumpulkan bahan, membersihkan dari kotoran, dan menjemur hingga kering sempurna agar tidak berjamur.\n- Tahap Desain: Menyiapkan bidang alas kaku (tripleks/karton tebal) dan menggambar sketsa pola.\n- Tahap Eksekusi/Penempelan: Mengoleskan lem kayu (PVAc) dan menempelkan bahan berdasarkan gradasi warna serta tekstur.\n- Tahap Finishing: Membersihkan sisa lem, merapikan tepi bidang, dan melapisi permukaan dengan vernis transparan agar awet.',
+        rubric: 'Skor 20: Menyebutkan 3 bahan lokal realistis (6) dan menyusun 4 tahapan pembuatan karya secara runtut dan teknis (14).\nSkor 14-19: Bahan sesuai, langkah kerja cukup runtut namun kurang detail pada perlakuan bahan/finishing.\nSkor 8-13: Langkah kerja masih bersifat umum.\nSkor 1-7: Jawaban kurang lengkap.\nSkor 0: Tidak menjawab.'
+      },
+      {
+        id: 35,
+        type: 'ESSAY',
+        tp: 'TP 9: Mengevaluasi hasil karya percobaan',
+        materi: 'Evaluasi Kritis dan Perbaikan Hasil Karya Percobaan Dua Dimensi',
+        indikator: 'Peserta didik dapat melakukan evaluasi kritis terhadap studi kasus karya percobaan dan merumuskan solusi perbaikannya.',
+        level: 'Level 3 (Penalaran/HOTS)',
+        question: 'Cermati studi kasus berikut:\nSekelompok siswa membuat karya percobaan dua dimensi berbentuk lukisan pemandangan pesisir menggunakan bahan alami berupa pasir pantai, daun kering, dan pewarna kunyit di atas karton tipis. Setelah tiga hari dipajang, muncul tiga masalah: (a) karton melengkung, (b) sebagian pasir rontok saat disentuh, dan (c) warna kunyit tampak pudar serta kurang kontras dengan warna pasir.\nLakukan evaluasi kritis terhadap ketiga permasalahan tersebut dan berikan solusi perbaikan teknis yang tepat untuk masing-masing masalah!',
+        maxScore: 20,
+        answerGuide: 'Evaluasi & Solusi Perbaikan Teknis:\n(a) Karton melengkung: Terjadi karena berat beban pasir dan kelembapan lem melebihi kekuatan karton tipis. Solusi: Mengganti bidang alas dengan bahan kaku seperti papan tripleks atau papan MDF.\n(b) Sebagian pasir rontok: Terjadi karena campuran lem kurang merata atau tidak ada lapisan pengunci permukaan. Solusi: Mencampur pasir dengan lem PVAc secara merata sebelum diaplikasikan, serta menyemprot/mengoleskan lapisan pelindung (clear coat/vernis) setelah kering.\n(c) Warna kunyit pudar & kurang kontras: Pigmen alami mudah teroksidasi dan warnanya senada dengan pasir cokelat. Solusi: Melakukan fiksasi pewarna alami atau memadukan pigmen gelap (seperti arang kayu/kopi) untuk menciptakan kontras gelap terang yang tegas.',
+        rubric: 'Skor 20: Menganalisis penyebab dan merumuskan solusi teknis yang tepat untuk ketiga masalah a, b, dan c secara logis dan mendalam (masing-masing ~6-7 poin).\nSkor 14-19: Mengevaluasi dan memberi solusi tepat untuk 2 dari 3 masalah.\nSkor 8-13: Hanya mengevaluasi 1 masalah atau solusi bersifat umum.\nSkor 1-7: Hanya mengulang soal tanpa analisis solusi.\nSkor 0: Tidak menjawab.'
+      }
+    ];
+
+    /* ========================================================================
+       3. STATE MANAGEMENT & LOCALSTORAGE HELPERS
+       ======================================================================== */
+    let appConfig = {};
+    let appQuestions = [];
+    let appResults = [];
+    let appRegistered = [];
+    let activeSession = null;
+    let timerInterval = null;
+    let pendingAuthTarget = null;
+    let pendingAuthSubtab = null;
+
+    function loadAllData() {
+      try {
+        const savedCfg = localStorage.getItem(STORAGE_KEYS.CONFIG);
+        appConfig = savedCfg ? { ...DEFAULT_CONFIG, ...JSON.parse(savedCfg) } : { ...DEFAULT_CONFIG };
+        // Migrasi otomatis apabila masih menyimpan PIN lama '123456'
+        if (appConfig.pin === '123456') {
+          appConfig.pin = DEFAULT_CONFIG.pin;
+          saveConfig();
+        }
+        // Perbarui otomatis durasi bawaan lama 90 menit ke 120 menit
+        if (Number(appConfig.durationMinutes) === 90) {
+          appConfig.durationMinutes = 120;
+          saveConfig();
+        }
+        // Perbarui otomatis KKTP bawaan lama 75 ke 70
+        if (Number(appConfig.kkm) === 75) {
+          appConfig.kkm = 70;
+          saveConfig();
+        }
+
+        const savedQs = localStorage.getItem(STORAGE_KEYS.QUESTIONS);
+        appQuestions = savedQs ? JSON.parse(savedQs) : JSON.parse(JSON.stringify(DEFAULT_QUESTIONS));
+
+        const savedRes = localStorage.getItem(STORAGE_KEYS.RESULTS);
+        appResults = savedRes ? JSON.parse(savedRes) : [];
+
+        const savedReg = localStorage.getItem(STORAGE_KEYS.REGISTERED);
+        appRegistered = savedReg ? JSON.parse(savedReg) : [];
+
+        const savedSession = localStorage.getItem(STORAGE_KEYS.ACTIVE_SESSION);
+        activeSession = savedSession ? JSON.parse(savedSession) : null;
+      } catch (err) {
+        console.error('Gagal memuat data penyimpanan lokal:', err);
+        appConfig = { ...DEFAULT_CONFIG };
+        appQuestions = JSON.parse(JSON.stringify(DEFAULT_QUESTIONS));
+        appResults = [];
+        appRegistered = [];
+        activeSession = null;
+      }
+    }
+
+    function saveConfig() {
+      localStorage.setItem(STORAGE_KEYS.CONFIG, JSON.stringify(appConfig));
+    }
+
+    function saveQuestions() {
+      localStorage.setItem(STORAGE_KEYS.QUESTIONS, JSON.stringify(appQuestions));
+    }
+
+    function saveResults() {
+      localStorage.setItem(STORAGE_KEYS.RESULTS, JSON.stringify(appResults));
+    }
+
+    function saveRegistered() {
+      localStorage.setItem(STORAGE_KEYS.REGISTERED, JSON.stringify(appRegistered));
+    }
+
+    function saveActiveSession() {
+      if (activeSession) {
+        localStorage.setItem(STORAGE_KEYS.ACTIVE_SESSION, JSON.stringify(activeSession));
+      } else {
+        localStorage.removeItem(STORAGE_KEYS.ACTIVE_SESSION);
+      }
+    }
+
+    /* ========================================================================
+       4. SINKRONISASI IDENTITAS, NAVIGASI & OTORISASI PIN GURU
+       ======================================================================== */
+    function syncIdentityUI() {
+      const navSchool = document.getElementById('nav-school-title');
+      const navSub = document.getElementById('nav-subject-subtitle');
+      const heroLine = document.getElementById('hero-school-line');
+      const metaSchool = document.getElementById('meta-school');
+      const metaTeacher = document.getElementById('meta-teacher');
+      const metaClass = document.getElementById('meta-class');
+      const metaYear = document.getElementById('meta-year');
+      const metaDate = document.getElementById('meta-date');
+      const infoSoal = document.getElementById('info-total-soal');
+      const infoDurasi = document.getElementById('info-durasi');
+      const infoKkm = document.getElementById('info-kkm');
+      const ruleDurasi = document.getElementById('rule-durasi');
+      const dashTeacher = document.getElementById('dash-teacher-name');
+      const dashSchool = document.getElementById('dash-school-info');
+      const footerTeacher = document.getElementById('footer-teacher');
+
+      const pgCount = appQuestions.filter(q => q.type === 'PG').length;
+      const essayCount = appQuestions.filter(q => q.type === 'ESSAY').length;
+
+      if (navSchool) navSchool.textContent = appConfig.school.toUpperCase();
+      if (navSub) navSub.textContent = `SAS Ganjil ${appConfig.subject} • ${appConfig.classLevel} (${appConfig.year})`;
+      if (heroLine) heroLine.textContent = `${appConfig.school.toUpperCase()} • MATA PELAJARAN ${appConfig.subject.toUpperCase()}`;
+      if (metaSchool) metaSchool.textContent = appConfig.school;
+      if (metaTeacher) metaTeacher.textContent = appConfig.teacher;
+      if (metaClass) metaClass.textContent = appConfig.classLevel;
+      if (metaYear) metaYear.textContent = appConfig.year;
+      if (metaDate) metaDate.textContent = appConfig.examDate || '26 November 2026';
+      if (infoSoal) infoSoal.textContent = `${appQuestions.length} Soal (${pgCount} PG + ${essayCount} Essay)`;
+      if (infoDurasi) infoDurasi.textContent = `${appConfig.durationMinutes} Menit`;
+      if (infoKkm) infoKkm.textContent = `Nilai ${appConfig.kkm}`;
+      if (ruleDurasi) ruleDurasi.textContent = `${appConfig.durationMinutes} menit`;
+      if (dashTeacher) dashTeacher.textContent = appConfig.teacher;
+      if (dashSchool) dashSchool.textContent = `Guru Mata Pelajaran ${appConfig.subject} • ${appConfig.school} • ${appConfig.classLevel} (${appConfig.year}) • Pelaksanaan: ${appConfig.examDate || '26 November 2026'}`;
+      if (footerTeacher) footerTeacher.textContent = appConfig.teacher;
+
+      // Isi form pengaturan Admin apabila elemen tersedia
+      const cfgSchool = document.getElementById('cfg-school');
+      if (cfgSchool) {
+        cfgSchool.value = appConfig.school;
+        document.getElementById('cfg-teacher').value = appConfig.teacher;
+        document.getElementById('cfg-subject').value = appConfig.subject;
+        document.getElementById('cfg-class').value = appConfig.classLevel;
+        document.getElementById('cfg-year').value = appConfig.year;
+        document.getElementById('cfg-date').value = appConfig.examDate || '26 November 2026';
+        document.getElementById('cfg-duration').value = appConfig.durationMinutes;
+        document.getElementById('cfg-kkm').value = appConfig.kkm;
+        document.getElementById('cfg-pin').value = appConfig.pin;
+      }
+    }
+
+    function navigateTo(viewName) {
+      document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.target === viewName);
+      });
+
+      const target = document.getElementById('view-' + viewName);
+      if (target) target.classList.add('active');
+
+      if (viewName === 'hasil-peserta') renderResultsTable();
+      if (viewName === 'dashboard-guru') renderGuruDashboard();
+      if (viewName === 'admin') renderAdminPanels();
+      if (viewName === 'sertifikat') populateCertificateDropdown();
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function requestPinAndGo(targetView, subtab = null) {
+      pendingAuthTarget = targetView;
+      pendingAuthSubtab = subtab;
+
+      showModal(`
+        <h3 style="color:var(--navy-900);margin-bottom:0.4rem;">Otorisasi Akses Pendidik</h3>
+        <p style="font-size:0.86rem;color:var(--slate-600);margin-bottom:1rem;">
+          Masukkan PIN akses guru untuk membuka halaman <strong>${targetView === 'admin' ? 'Admin Pengaturan' : 'Dashboard Guru'}</strong>.
+        </p>
+        <form onsubmit="verifyTeacherPin(event)">
+          <div class="form-group">
+            <label class="form-label" for="inp-teacher-pin">PIN Akses Guru</label>
+            <input type="password" id="inp-teacher-pin" class="form-control" placeholder="Masukkan PIN..." autocomplete="off" required />
+            <div id="pin-error-msg" style="display:none;color:var(--danger);font-size:0.8rem;margin-top:0.35rem;font-weight:700;">
+              PIN yang Anda masukkan salah. Silakan coba kembali.
+            </div>
+          </div>
+          <div style="display:flex;justify-content:flex-end;gap:0.6rem;">
+            <button type="button" class="btn btn-outline" onclick="closeModal()">Batal</button>
+            <button type="submit" class="btn btn-navy">Masuk</button>
+          </div>
+        </form>
+      `);
+
+      setTimeout(() => {
+        const pinInput = document.getElementById('inp-teacher-pin');
+        if (pinInput) pinInput.focus();
+      }, 60);
+    }
+
+    function verifyTeacherPin(e) {
+      e.preventDefault();
+      const entered = (document.getElementById('inp-teacher-pin').value || '').trim();
+      if (entered === String(appConfig.pin)) {
+        closeModal();
+        const dest = pendingAuthTarget;
+        const sub = pendingAuthSubtab;
+        pendingAuthTarget = null;
+        pendingAuthSubtab = null;
+        navigateTo(dest);
+        if (dest === 'dashboard-guru' && sub) {
+          switchGuruTab(sub);
+        }
+      } else {
+        document.getElementById('pin-error-msg').style.display = 'block';
+      }
+    }
+
+    /* ========================================================================
+       5. ENGINE PELAKSANAAN UJIAN (TIMER, NAVIGASI, AUTO-SAVE, ANTI-TAB)
+       ======================================================================== */
+    function handlePrepareExam(e) {
+      e.preventDefault();
+      const nama = document.getElementById('inp-nama').value.trim();
+      const kelas = document.getElementById('inp-kelas').value.trim();
+      const nomor = document.getElementById('inp-nomor').value.trim();
+      const nisn = document.getElementById('inp-nisn').value.trim();
+
+      if (!nama || !kelas || !nomor || !nisn) {
+        showToast('Harap lengkapi seluruh data identitas peserta.');
+        return;
+      }
+
+      showModal(`
+        <h3 style="color:var(--navy-900);margin-bottom:0.6rem;">Konfirmasi Mulai Ujian</h3>
+        <div style="background:var(--navy-50);padding:0.9rem;border-radius:var(--radius-sm);margin-bottom:0.9rem;font-size:0.9rem;">
+          <div><strong>Nama Peserta:</strong> ${escapeHtml(nama)}</div>
+          <div><strong>Kelas:</strong> ${escapeHtml(kelas)}</div>
+          <div><strong>NIS / NISN:</strong> ${escapeHtml(nisn)}</div>
+          <div><strong>Nomor Peserta:</strong> ${escapeHtml(nomor)}</div>
+          <div><strong>Durasi Waktu:</strong> ${appConfig.durationMinutes} Menit (${appQuestions.length} Soal)</div>
+        </div>
+        <p style="font-size:0.86rem;color:var(--slate-700);margin-bottom:1.1rem;">
+          Setelah tombol <strong>Mulai Kerjakan Sekarang</strong> ditekan, waktu hitung mundur akan segera berjalan. Apakah Anda sudah siap?
+        </p>
+        <div style="display:flex;justify-content:flex-end;gap:0.6rem;">
+          <button type="button" class="btn btn-outline" onclick="closeModal()">Periksa Kembali</button>
+          <button type="button" class="btn btn-gold" onclick="startExamSession('${escapeAttr(nama)}', '${escapeAttr(kelas)}', '${escapeAttr(nomor)}', '${escapeAttr(nisn)}')">
+            Mulai Kerjakan Sekarang
+          </button>
+        </div>
+      `);
+    }
+
+    function startExamSession(nama, kelas, nomor, nisn = '-') {
+      closeModal();
+      const now = Date.now();
+      const durationMs = (Number(appConfig.durationMinutes) || 120) * 60 * 1000;
+
+      activeSession = {
+        id: 'SES-' + now,
+        nama,
+        kelas,
+        nomor,
+        nisn,
+        startTime: now,
+        endTime: now + durationMs,
+        currentIndex: 0,
+        answers: {},
+        doubts: {},
+        tabSwitchCount: 0
+      };
+
+      // Otomatis daftarkan ke daftar peserta jika belum ada
+      if (!appRegistered.some(s => s.nomor.toLowerCase() === nomor.toLowerCase())) {
+        appRegistered.push({ nomor, nama, kelas, nisn });
+        saveRegistered();
+      }
+
+      saveActiveSession();
+      enterExamUI();
+      showToast('Sesi ujian dimulai. Selamat mengerjakan!');
+    }
+
+    function enterExamUI() {
+      if (!activeSession) return;
+      document.getElementById('exam-login-panel').style.display = 'none';
+      document.getElementById('exam-active-panel').style.display = 'block';
+      const nisnInfo = activeSession.nisn && activeSession.nisn !== '-' ? ` • NIS/NISN: ${activeSession.nisn}` : '';
+      document.getElementById('active-student-info').textContent = `${activeSession.nama} (${activeSession.kelas}${nisnInfo} • No: ${activeSession.nomor})`;
+
+      updateTabBadge();
+      renderQuestionNumberGrid();
+      renderCurrentQuestion();
+      startCountdownTimer();
+    }
+
+    function startCountdownTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      const tick = () => {
+        if (!activeSession) {
+          clearInterval(timerInterval);
+          return;
+        }
+        const remainingMs = activeSession.endTime - Date.now();
+        if (remainingMs <= 0) {
+          document.getElementById('timer-clock').textContent = '00:00';
+          clearInterval(timerInterval);
+          showToast('Waktu ujian telah habis! Jawaban dikumpulkan otomatis.');
+          finalizeExamSubmission(true);
+          return;
+        }
+        const totalSec = Math.floor(remainingMs / 1000);
+        const mins = Math.floor(totalSec / 60);
+        const secs = totalSec % 60;
+        const formatted = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        const clockEl = document.getElementById('timer-clock');
+        const pillEl = document.getElementById('exam-timer-display');
+        if (clockEl) clockEl.textContent = formatted;
+        if (pillEl) {
+          pillEl.classList.toggle('danger', totalSec <= 300);
+        }
+      };
+      tick();
+      timerInterval = setInterval(tick, 1000);
+    }
+
+    function renderCurrentQuestion() {
+      if (!activeSession) return;
+      const idx = activeSession.currentIndex;
+      const q = appQuestions[idx];
+      if (!q) return;
+
+      document.getElementById('q-curr-label').textContent = `SOAL NO. ${idx + 1} DARI ${appQuestions.length}`;
+      document.getElementById('q-curr-type').textContent = q.type === 'PG' ? 'PILIHAN GANDA' : 'URAIAN / ESSAY';
+      document.getElementById('q-curr-text').textContent = q.question;
+
+      const optContainer = document.getElementById('q-options-container');
+      const essayContainer = document.getElementById('q-essay-container');
+      const savedAns = activeSession.answers[q.id];
+
+      if (q.type === 'PG') {
+        optContainer.style.display = 'flex';
+        essayContainer.style.display = 'none';
+        const letters = ['A', 'B', 'C', 'D', 'E'];
+        optContainer.innerHTML = letters.map(letter => {
+          const isSelected = savedAns === letter;
+          return `
+            <div class="option-item ${isSelected ? 'selected' : ''}" onclick="selectPgOption(${q.id}, '${letter}')">
+              <div class="option-letter">${letter}</div>
+              <div style="flex:1;padding-top:3px;">${escapeHtml(q.options[letter] || '')}</div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        optContainer.style.display = 'none';
+        essayContainer.style.display = 'block';
+        const ta = document.getElementById('essay-answer-input');
+        ta.value = savedAns || '';
+      }
+
+      // Update tombol navigasi & ragu-ragu
+      document.getElementById('btn-prev-q').disabled = idx === 0;
+      document.getElementById('btn-next-q').textContent = idx === appQuestions.length - 1 ? 'Selesai →' : 'Berikutnya →';
+      const isDoubt = !!activeSession.doubts[q.id];
+      const doubtBtn = document.getElementById('btn-doubt-q');
+      doubtBtn.textContent = isDoubt ? '★ Tandai Yakin' : '☆ Ragu-Ragu';
+      doubtBtn.style.opacity = isDoubt ? '1' : '0.88';
+
+      updateProgressAndGrid();
+    }
+
+    function selectPgOption(qId, letter) {
+      if (!activeSession) return;
+      activeSession.answers[qId] = letter;
+      saveActiveSession();
+      flashAutosave();
+      renderCurrentQuestion();
+    }
+
+    function handleEssayInput(val) {
+      if (!activeSession) return;
+      const q = appQuestions[activeSession.currentIndex];
+      if (!q) return;
+      if (val.trim().length > 0) {
+        activeSession.answers[q.id] = val;
+      } else {
+        delete activeSession.answers[q.id];
+      }
+      saveActiveSession();
+      flashAutosave();
+      updateProgressAndGrid();
+    }
+
+    function toggleDoubt() {
+      if (!activeSession) return;
+      const q = appQuestions[activeSession.currentIndex];
+      if (!q) return;
+      if (activeSession.doubts[q.id]) {
+        delete activeSession.doubts[q.id];
+      } else {
+        activeSession.doubts[q.id] = true;
+      }
+      saveActiveSession();
+      renderCurrentQuestion();
+    }
+
+    function changeQuestion(delta) {
+      if (!activeSession) return;
+      const nextIdx = activeSession.currentIndex + delta;
+      if (nextIdx < 0) return;
+      if (nextIdx >= appQuestions.length) {
+        confirmFinishExam();
+        return;
+      }
+      activeSession.currentIndex = nextIdx;
+      saveActiveSession();
+      renderCurrentQuestion();
+    }
+
+    function jumpToQuestion(idx) {
+      if (!activeSession) return;
+      activeSession.currentIndex = idx;
+      saveActiveSession();
+      renderCurrentQuestion();
+    }
+
+    function renderQuestionNumberGrid() {
+      const grid = document.getElementById('q-number-grid');
+      grid.innerHTML = appQuestions.map((q, idx) => `
+        <button type="button" class="q-num-btn" id="q-grid-btn-${idx}" onclick="jumpToQuestion(${idx})">${idx + 1}</button>
+      `).join('');
+      updateProgressAndGrid();
+    }
+
+    function updateProgressAndGrid() {
+      if (!activeSession) return;
+      let answeredCount = 0;
+      appQuestions.forEach((q, idx) => {
+        const ans = activeSession.answers[q.id];
+        const hasAns = ans !== undefined && String(ans).trim() !== '';
+        if (hasAns) answeredCount++;
+
+        const btn = document.getElementById(`q-grid-btn-${idx}`);
+        if (btn) {
+          btn.className = 'q-num-btn';
+          if (activeSession.doubts[q.id]) {
+            btn.classList.add('doubt');
+          } else if (hasAns) {
+            btn.classList.add('answered');
+          }
+          if (idx === activeSession.currentIndex) {
+            btn.classList.add('current');
+          }
+        }
+      });
+      document.getElementById('nav-progress-badge').textContent = `${answeredCount}/${appQuestions.length}`;
+    }
+
+    function flashAutosave() {
+      const el = document.getElementById('autosave-indicator');
+      if (!el) return;
+      const now = new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      el.textContent = `✓ Tersimpan otomatis pukul ${now}`;
+    }
+
+    function confirmFinishExam() {
+      if (!activeSession) return;
+      let answeredCount = 0;
+      let doubtCount = Object.keys(activeSession.doubts).length;
+      appQuestions.forEach(q => {
+        const ans = activeSession.answers[q.id];
+        if (ans !== undefined && String(ans).trim() !== '') answeredCount++;
+      });
+      const unanswered = appQuestions.length - answeredCount;
+
+      showModal(`
+        <h3 style="color:var(--navy-900);margin-bottom:0.6rem;">Konfirmasi Pengumpulan Jawaban</h3>
+        <div style="background:var(--navy-50);padding:0.9rem;border-radius:var(--radius-sm);margin-bottom:0.9rem;font-size:0.9rem;">
+          <div><strong>Soal Terjawab:</strong> ${answeredCount} dari ${appQuestions.length} soal</div>
+          <div><strong>Soal Belum Dijawab:</strong> ${unanswered} soal</div>
+          <div><strong>Ditandai Ragu-Ragu:</strong> ${doubtCount} soal</div>
+        </div>
+        <p style="font-size:0.86rem;color:var(--slate-700);margin-bottom:1.1rem;">
+          Setelah ujian dikumpulkan, Anda tidak dapat mengubah kembali jawaban Anda. Yakin ingin mengakhiri ujian sekarang?
+        </p>
+        <div style="display:flex;justify-content:flex-end;gap:0.6rem;">
+          <button type="button" class="btn btn-outline" onclick="closeModal()">Kembali Mengerjakan</button>
+          <button type="button" class="btn btn-success" onclick="finalizeExamSubmission(false)">Ya, Kumpulkan Ujian</button>
+        </div>
+      `);
+    }
+
+    function finalizeExamSubmission(isAutoTimeout) {
+      if (!activeSession) return;
+      closeModal();
+      if (timerInterval) clearInterval(timerInterval);
+
+      const pgQuestions = appQuestions.filter(q => q.type === 'PG');
+      const essayQuestions = appQuestions.filter(q => q.type === 'ESSAY');
+
+      let correctPg = 0;
+      pgQuestions.forEach(q => {
+        if (activeSession.answers[q.id] === q.answer) {
+          correctPg++;
+        }
+      });
+
+      const nilaiPg = pgQuestions.length > 0 ? Number(((correctPg / pgQuestions.length) * 100).toFixed(2)) : 0;
+      const essayScores = {};
+      essayQuestions.forEach(q => {
+        essayScores[q.id] = null; // Menunggu penilaian guru
+      });
+
+      const hasEssay = essayQuestions.length > 0;
+      const statusPenilaian = hasEssay ? 'Menunggu penilaian essay' : 'Selesai dinilai';
+      const nilaiEssay = hasEssay ? null : 0;
+      const nilaiAkhir = hasEssay ? Number((nilaiPg * 0.6).toFixed(2)) : nilaiPg;
+
+      const record = {
+        resultId: 'RES-' + Date.now() + '-' + Math.random().toString(36).slice(2, 6),
+        nama: activeSession.nama,
+        kelas: activeSession.kelas,
+        nomor: activeSession.nomor,
+        nisn: activeSession.nisn || '-',
+        submittedAt: new Date().toLocaleString('id-ID'),
+        timestamp: Date.now(),
+        tabSwitchCount: activeSession.tabSwitchCount || 0,
+        answers: { ...activeSession.answers },
+        correctPg,
+        totalPg: pgQuestions.length,
+        nilaiPg,
+        essayScores,
+        nilaiEssay,
+        nilaiAkhir,
+        statusPenilaian,
+        autoTimeout: !!isAutoTimeout
+      };
+
+      // Simpan seluruh peserta didik yang mengerjakan melalui link yang sama tanpa menghapus peserta lain
+      const existingIdx = appResults.findIndex(
+        r => r.nomor.toLowerCase() === record.nomor.toLowerCase() &&
+             r.nama.toLowerCase() === record.nama.toLowerCase()
+      );
+      if (existingIdx >= 0) {
+        appResults[existingIdx] = record;
+      } else {
+        appResults.push(record);
+      }
+      saveResults();
+      broadcastSyncUpdate();
+
+      activeSession = null;
+      saveActiveSession();
+      document.getElementById('exam-active-panel').style.display = 'none';
+      document.getElementById('exam-login-panel').style.display = 'block';
+      document.getElementById('form-login-peserta').reset();
+
+      showToast(isAutoTimeout ? 'Waktu habis! Ujian berhasil dikumpulkan otomatis.' : 'Ujian selesai! Jawaban Anda berhasil disimpan.');
+      navigateTo('hasil-peserta');
+    }
+
+    function updateTabBadge() {
+      const badge = document.getElementById('tab-warn-badge');
+      if (!badge || !activeSession) return;
+      if (activeSession.tabSwitchCount > 0) {
+        badge.style.display = 'inline-block';
+        badge.textContent = `Peringatan Pindah Tab: ${activeSession.tabSwitchCount}x`;
+      } else {
+        badge.style.display = 'none';
+      }
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && activeSession) {
+        activeSession.tabSwitchCount = (activeSession.tabSwitchCount || 0) + 1;
+        saveActiveSession();
+        updateTabBadge();
+        showModal(`
+          <h3 style="color:var(--danger);margin-bottom:0.5rem;">Peringatan Pengawasan Ujian!</h3>
+          <p style="font-size:0.9rem;color:var(--slate-700);margin-bottom:1rem;">
+            Sistem mendeteksi Anda meninggalkan halaman atau berpindah tab saat ujian berlangsung (Total tercatat: <strong>${activeSession.tabSwitchCount} kali</strong>). Tetap fokus pada halaman ujian hingga selesai.
+          </p>
+          <div style="display:flex;justify-content:flex-end;">
+            <button type="button" class="btn btn-navy" onclick="closeModal()">Saya Mengerti &amp; Lanjutkan</button>
+          </div>
+        `);
+      }
+    });
+
+    window.addEventListener('beforeunload', (e) => {
+      if (activeSession) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    });
+
+    /* ========================================================================
+       6. HASIL PESERTA & SERTIFIKAT DIGITAL
+       ======================================================================== */
+    function getPredikat(score) {
+      if (score >= 90) return 'A (Sangat Baik)';
+      if (score >= 80) return 'B (Baik)';
+      if (score >= appConfig.kkm) return 'C (Cukup)';
+      return 'D (Perlu Bimbingan)';
+    }
+
+    function renderResultsTable() {
+      const tbody = document.getElementById('tbody-hasil-peserta');
+      const keyword = (document.getElementById('filter-hasil-search').value || '').toLowerCase();
+      const statusFilter = document.getElementById('filter-hasil-status').value;
+
+      // Gabungkan seluruh data peserta yang tersimpan dari tautan/browser yang sama
+      const filtered = [...appResults]
+        .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0))
+        .filter(r => {
+          const matchText = r.nama.toLowerCase().includes(keyword) ||
+                            r.nomor.toLowerCase().includes(keyword) ||
+                            r.kelas.toLowerCase().includes(keyword) ||
+                            (r.nisn && r.nisn.toLowerCase().includes(keyword));
+          const matchStatus = statusFilter === 'ALL' || r.statusPenilaian === statusFilter;
+          return matchText && matchStatus;
+        });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="11" style="text-align:center;color:var(--slate-500);padding:1.5rem;">Belum ada data hasil ujian peserta yang sesuai filter.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = filtered.map((r, i) => {
+        const isDone = r.statusPenilaian === 'Selesai dinilai';
+        const isPass = isDone && r.nilaiAkhir >= appConfig.kkm;
+        const statusBadge = isDone
+          ? `<span class="badge badge-success">Selesai dinilai</span>`
+          : `<span class="badge badge-warning">Menunggu penilaian essay</span>`;
+        const tuntasBadge = !isDone
+          ? `<span class="badge badge-navy">Menunggu Essay</span>`
+          : (isPass ? `<span class="badge badge-success">TUNTAS (≥${appConfig.kkm})</span>` : `<span class="badge badge-danger">BELUM TUNTAS</span>`);
+
+        return `
+          <tr>
+            <td>${i + 1}</td>
+            <td><strong>${escapeHtml(r.nomor)}</strong>${r.nisn && r.nisn !== '-' ? `<div style="font-size:0.74rem;color:var(--slate-500);">NIS/NISN: ${escapeHtml(r.nisn)}</div>` : ''}</td>
+            <td>${escapeHtml(r.nama)}</td>
+            <td>${escapeHtml(r.kelas)}</td>
+            <td>${r.nilaiPg.toFixed(2)} (${r.correctPg}/${r.totalPg})</td>
+            <td>${r.nilaiEssay !== null ? r.nilaiEssay.toFixed(2) : '-'}</td>
+            <td><strong>${r.nilaiAkhir.toFixed(2)}</strong></td>
+            <td>${statusBadge}</td>
+            <td>${tuntasBadge}</td>
+            <td style="font-size:0.78rem;">${escapeHtml(r.submittedAt)}</td>
+            <td class="no-print">
+              ${isDone
+                ? `<button class="btn btn-gold btn-sm" onclick="openCertificateFor('${escapeAttr(r.resultId)}')">Sertifikat</button>`
+                : `<span style="font-size:0.76rem;color:var(--slate-500);">Menunggu Guru</span>`}
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function openCertificateFor(resultId) {
+      navigateTo('sertifikat');
+      const sel = document.getElementById('select-cert-student');
+      sel.value = resultId;
+      renderCertificate();
+    }
+
+    function populateCertificateDropdown() {
+      const sel = document.getElementById('select-cert-student');
+      const completed = appResults.filter(r => r.statusPenilaian === 'Selesai dinilai');
+
+      if (completed.length === 0) {
+        sel.innerHTML = `<option value="">-- Belum ada peserta berstatus Selesai dinilai --</option>`;
+        renderCertificate();
+        return;
+      }
+
+      const prevVal = sel.value;
+      sel.innerHTML = completed.map((r, idx) => `
+        <option value="${r.resultId}">${idx + 1}. ${escapeHtml(r.nama)} (${escapeHtml(r.kelas)} - Nilai: ${r.nilaiAkhir.toFixed(2)})</option>
+      `).join('');
+
+      if (prevVal && completed.some(r => r.resultId === prevVal)) {
+        sel.value = prevVal;
+      }
+      renderCertificate();
+    }
+
+    function renderCertificate() {
+      const sel = document.getElementById('select-cert-student');
+      const resultId = sel.value;
+      const idx = appResults.findIndex(r => r.resultId === resultId);
+      const r = idx >= 0 ? appResults[idx] : null;
+
+      document.getElementById('cert-school').textContent = appConfig.school.toUpperCase();
+      document.getElementById('cert-teacher').textContent = appConfig.teacher;
+
+      if (!r) {
+        document.getElementById('cert-no').textContent = 'Nomor: 000/SAS-SB/SMK-WL/XI/2026';
+        document.getElementById('cert-name').textContent = 'Belum Ada Peserta Terpilih';
+        document.getElementById('cert-class-no').textContent = 'Kelas: - • Nomor Peserta: -';
+        document.getElementById('cert-score').textContent = '0.00';
+        document.getElementById('cert-grade').textContent = '-';
+        document.getElementById('cert-status').textContent = '-';
+        return;
+      }
+
+      const seq = String(idx + 1).padStart(3, '0');
+      document.getElementById('cert-no').textContent = `Nomor: ${seq}/SAS-SB/SMK-WL/XI/2026`;
+      document.getElementById('cert-name').textContent = r.nama;
+      const certNisnText = r.nisn && r.nisn !== '-' ? ` • NIS/NISN: ${r.nisn}` : '';
+      document.getElementById('cert-class-no').textContent = `Kelas: ${r.kelas}${certNisnText} • Nomor Peserta: ${r.nomor}`;
+      document.getElementById('cert-desc').innerHTML = `Telah mengikuti dan menyelesaikan <strong>Sumatif Akhir Semester Ganjil</strong> Mata Pelajaran <strong>${escapeHtml(appConfig.subject)} (${escapeHtml(appConfig.classLevel)})</strong> Tahun Pelajaran <strong>${escapeHtml(appConfig.year)}</strong> dengan capaian hasil belajar sebagai berikut:`;
+      document.getElementById('cert-score').textContent = r.nilaiAkhir.toFixed(2);
+      document.getElementById('cert-grade').textContent = getPredikat(r.nilaiAkhir).split(' ')[0];
+      document.getElementById('cert-status').textContent = r.nilaiAkhir >= appConfig.kkm ? 'TUNTAS' : 'BELUM TUNTAS';
+      document.getElementById('cert-date').textContent = `Laimu, ${appConfig.examDate || '26 November 2026'}`;
+    }
+
+    function printCertificate() {
+      document.body.classList.add('print-cert-mode');
+      window.print();
+      setTimeout(() => document.body.classList.remove('print-cert-mode'), 500);
+    }
+
+    /* ========================================================================
+       7. DASHBOARD GURU (STATISTIK, KOREKSI ESSAY, GRAFIK, KISI-KISI)
+       ======================================================================== */
+    function switchGuruTab(tabName) {
+      document.querySelectorAll('#view-dashboard-guru .subtab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.subtab === tabName);
+      });
+      document.querySelectorAll('.guru-tab-pane').forEach(pane => pane.style.display = 'none');
+      const target = document.getElementById('guru-tab-' + tabName);
+      if (target) target.style.display = 'block';
+
+      if (tabName === 'grafik') renderGuruCharts();
+      if (tabName === 'kisi') renderKisiKisiTable();
+    }
+
+    function renderGuruDashboard() {
+      const totalReg = appRegistered.length;
+      const doneCount = appResults.length;
+      const notYetCount = appRegistered.filter(reg => !appResults.some(res => res.nomor.toLowerCase() === reg.nomor.toLowerCase())).length;
+
+      const avgScore = doneCount > 0
+        ? (appResults.reduce((acc, r) => acc + r.nilaiAkhir, 0) / doneCount).toFixed(2)
+        : '0.0';
+
+      document.getElementById('stat-total-peserta').textContent = Math.max(totalReg, doneCount);
+      document.getElementById('stat-sudah-ujian').textContent = doneCount;
+      document.getElementById('stat-belum-ujian').textContent = notYetCount;
+      document.getElementById('stat-rata-nilai').textContent = avgScore;
+
+      renderGuruRekapTable();
+      renderGuruCharts();
+      renderKisiKisiTable();
+    }
+
+    function renderGuruRekapTable() {
+      const tbody = document.getElementById('tbody-guru-rekap');
+      if (appResults.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="11" style="text-align:center;color:var(--slate-500);padding:1.5rem;">Belum ada peserta yang mengumpulkan ujian.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = appResults.map((r, i) => {
+        const isDone = r.statusPenilaian === 'Selesai dinilai';
+        return `
+          <tr>
+            <td>${i + 1}</td>
+            <td><strong>${escapeHtml(r.nomor)}</strong></td>
+            <td>${escapeHtml(r.nama)}</td>
+            <td>${escapeHtml(r.kelas)}</td>
+            <td>${r.correctPg} / ${r.totalPg}</td>
+            <td>${r.nilaiPg.toFixed(2)}</td>
+            <td>${r.nilaiEssay !== null ? r.nilaiEssay.toFixed(2) : '-'}</td>
+            <td><strong>${r.nilaiAkhir.toFixed(2)}</strong></td>
+            <td>${isDone ? '<span class="badge badge-success">Selesai dinilai</span>' : '<span class="badge badge-warning">Menunggu essay</span>'}</td>
+            <td>${r.tabSwitchCount > 0 ? `<span class="badge badge-danger">${r.tabSwitchCount}x</span>` : '<span class="badge badge-success">Aman</span>'}</td>
+            <td class="no-print" style="display:flex;gap:0.35rem;flex-wrap:wrap;">
+              <button class="btn btn-gold btn-sm" onclick="openEssayGradingModal('${escapeAttr(r.resultId)}')">Koreksi Essay</button>
+              <button class="btn btn-outline btn-sm" onclick="deleteResultRecord('${escapeAttr(r.resultId)}')">Hapus</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function openEssayGradingModal(resultId) {
+      const r = appResults.find(item => item.resultId === resultId);
+      if (!r) return;
+      const essayQs = appQuestions.filter(q => q.type === 'ESSAY');
+
+      const blocks = essayQs.map((q, idx) => {
+        const studentAns = r.answers[q.id] || '(Peserta tidak mengisi jawaban)';
+        const currentScore = r.essayScores && r.essayScores[q.id] !== null && r.essayScores[q.id] !== undefined
+          ? r.essayScores[q.id]
+          : 0;
+        const maxS = q.maxScore || 20;
+
+        return `
+          <div style="border:1px solid var(--slate-300);border-radius:var(--radius-sm);padding:1rem;margin-bottom:1rem;background:var(--slate-50);">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.4rem;">
+              <strong style="color:var(--navy-900);">Soal Essay No. ${q.id} (Skor Maks: ${maxS})</strong>
+              <span class="badge badge-navy">${escapeHtml(q.level)}</span>
+            </div>
+            <p style="font-size:0.86rem;margin-bottom:0.6rem;color:var(--slate-800);">${escapeHtml(q.question)}</p>
+
+            <div style="background:var(--white);border-left:4px solid var(--navy-800);padding:0.65rem;margin-bottom:0.6rem;font-size:0.86rem;">
+              <strong style="display:block;color:var(--navy-800);margin-bottom:0.25rem;">Jawaban Peserta:</strong>
+              <div style="white-space:pre-line;">${escapeHtml(studentAns)}</div>
+            </div>
+
+            <div style="background:var(--gold-100);border-left:4px solid var(--gold-600);padding:0.65rem;margin-bottom:0.65rem;font-size:0.82rem;">
+              <strong>Pedoman Jawaban &amp; Rubrik:</strong>
+              <div style="white-space:pre-line;margin-top:0.2rem;">${escapeHtml(q.answerGuide)}\n\n<em>Rubrik:</em> ${escapeHtml(q.rubric)}</div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <label style="font-weight:700;font-size:0.86rem;">Beri Skor (0 - ${maxS}):</label>
+              <input type="number" id="grade-essay-${q.id}" class="form-control" style="max-width:110px;" min="0" max="${maxS}" step="0.5" value="${currentScore}" />
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      showModal(`
+        <h3 style="color:var(--navy-900);margin-bottom:0.35rem;">Koreksi Jawaban Essay Peserta</h3>
+        <p style="font-size:0.86rem;color:var(--slate-600);margin-bottom:1rem;">
+          Peserta: <strong>${escapeHtml(r.nama)}</strong> (${escapeHtml(r.kelas)} • No: ${escapeHtml(r.nomor)}) • Nilai PG: <strong>${r.nilaiPg.toFixed(2)}</strong>
+        </p>
+        <form onsubmit="saveEssayGrades(event, '${escapeAttr(r.resultId)}')">
+          ${blocks}
+          <div style="display:flex;justify-content:flex-end;gap:0.6rem;margin-top:1rem;">
+            <button type="button" class="btn btn-outline" onclick="closeModal()">Batal</button>
+            <button type="submit" class="btn btn-success">Simpan Nilai Essay &amp; Hitung Nilai Akhir</button>
+          </div>
+        </form>
+      `, true);
+    }
+
+    function saveEssayGrades(e, resultId) {
+      e.preventDefault();
+      const r = appResults.find(item => item.resultId === resultId);
+      if (!r) return;
+
+      const essayQs = appQuestions.filter(q => q.type === 'ESSAY');
+      let obtained = 0;
+      let maxTotal = 0;
+
+      essayQs.forEach(q => {
+        const maxS = q.maxScore || 20;
+        const val = Math.min(maxS, Math.max(0, Number(document.getElementById(`grade-essay-${q.id}`).value) || 0));
+        r.essayScores[q.id] = val;
+        obtained += val;
+        maxTotal += maxS;
+      });
+
+      const nilaiEssay = maxTotal > 0 ? Number(((obtained / maxTotal) * 100).toFixed(2)) : 0;
+      const nilaiAkhir = Number(((r.nilaiPg * 0.6) + (nilaiEssay * 0.4)).toFixed(2));
+
+      r.nilaiEssay = nilaiEssay;
+      r.nilaiAkhir = nilaiAkhir;
+      r.statusPenilaian = 'Selesai dinilai';
+
+      saveResults();
+      closeModal();
+      renderGuruDashboard();
+      showToast(`Penilaian selesai! Nilai Akhir ${r.nama}: ${nilaiAkhir.toFixed(2)}`);
+    }
+
+    function deleteResultRecord(resultId) {
+      showModal(`
+        <h3 style="color:var(--danger);margin-bottom:0.5rem;">Hapus Data Hasil Peserta?</h3>
+        <p style="font-size:0.9rem;color:var(--slate-700);margin-bottom:1rem;">Apakah Anda yakin ingin menghapus data hasil ujian peserta ini?</p>
+        <div style="display:flex;justify-content:flex-end;gap:0.6rem;">
+          <button class="btn btn-outline" onclick="closeModal()">Batal</button>
+          <button class="btn btn-danger" onclick="confirmDeleteResult('${escapeAttr(resultId)}')">Hapus</button>
+        </div>
+      `);
+    }
+
+    function confirmDeleteResult(resultId) {
+      appResults = appResults.filter(r => r.resultId !== resultId);
+      saveResults();
+      closeModal();
+      renderGuruDashboard();
+      showToast('Data hasil peserta berhasil dihapus.');
+    }
+
+    function renderGuruCharts() {
+      const predContainer = document.getElementById('chart-predikat-container');
+      const passContainer = document.getElementById('chart-ketuntasan-container');
+
+      const completed = appResults.filter(r => r.statusPenilaian === 'Selesai dinilai');
+      const waiting = appResults.length - completed.length;
+
+      let countA = 0, countB = 0, countC = 0, countD = 0;
+      let tuntas = 0, belumTuntas = 0;
+
+      completed.forEach(r => {
+        if (r.nilaiAkhir >= 90) countA++;
+        else if (r.nilaiAkhir >= 80) countB++;
+        else if (r.nilaiAkhir >= appConfig.kkm) countC++;
+        else countD++;
+
+        if (r.nilaiAkhir >= appConfig.kkm) tuntas++;
+        else belumTuntas++;
+      });
+
+      const total = Math.max(completed.length, 1);
+      const bars = [
+        { label: 'Predikat A (90 - 100)', val: countA, color: '#0d9488' },
+        { label: 'Predikat B (80 - 89)', val: countB, color: '#1a365d' },
+        { label: `Predikat C (${appConfig.kkm} - 79)`, val: countC, color: '#d4af37' },
+        { label: `Predikat D (< ${appConfig.kkm})`, val: countD, color: '#e11d48' }
+      ];
+
+      predContainer.innerHTML = bars.map(b => {
+        const pct = Math.round((b.val / total) * 100);
+        return `
+          <div style="margin-bottom:0.85rem;">
+            <div style="display:flex;justify-content:space-between;font-size:0.84rem;font-weight:700;margin-bottom:0.25rem;">
+              <span>${b.label}</span>
+              <span>${b.val} peserta (${completed.length ? pct : 0}%)</span>
+            </div>
+            <div style="background:var(--slate-200);height:14px;border-radius:999px;overflow:hidden;">
+              <div style="background:${b.color};width:${completed.length ? pct : 0}%;height:100%;transition:width 0.4s;"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      passContainer.innerHTML = `
+        <div style="display:flex;flex-direction:column;gap:0.75rem;font-size:0.9rem;">
+          <div style="display:flex;justify-content:space-between;padding:0.75rem;background:var(--success-bg);border-radius:var(--radius-sm);color:var(--success);font-weight:700;">
+            <span>Tuntas (Nilai Akhir ≥ ${appConfig.kkm})</span>
+            <span>${tuntas} Peserta</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:0.75rem;background:var(--danger-bg);border-radius:var(--radius-sm);color:var(--danger);font-weight:700;">
+            <span>Belum Tuntas (Nilai Akhir &lt; ${appConfig.kkm})</span>
+            <span>${belumTuntas} Peserta</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:0.75rem;background:var(--warning-bg);border-radius:var(--radius-sm);color:var(--warning);font-weight:700;">
+            <span>Menunggu Penilaian Essay Guru</span>
+            <span>${waiting} Peserta</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderKisiKisiTable() {
+      const tbody = document.getElementById('tbody-kisi-kisi');
+      tbody.innerHTML = appQuestions.map((q, idx) => {
+        const keyInfo = q.type === 'PG'
+          ? `<strong>Kunci: ${q.answer}</strong><br/><span style="font-size:0.78rem;color:var(--slate-600);">${escapeHtml(q.explanation || '')}</span>`
+          : `<strong>Skor Maks: ${q.maxScore || 20}</strong><br/><span style="font-size:0.78rem;color:var(--slate-700);white-space:pre-line;">${escapeHtml(q.answerGuide || '')}</span>`;
+
+        return `
+          <tr>
+            <td><strong>${idx + 1}</strong></td>
+            <td style="font-size:0.82rem;">${escapeHtml(q.tp)}</td>
+            <td style="font-size:0.82rem;">${escapeHtml(q.materi)}</td>
+            <td style="font-size:0.82rem;">${escapeHtml(q.indikator)}</td>
+            <td><span class="badge ${q.type === 'PG' ? 'badge-navy' : 'badge-gold'}">${q.type}</span></td>
+            <td style="font-size:0.8rem;">${escapeHtml(q.level)}</td>
+            <td>${keyInfo}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    /* ========================================================================
+       8. ADMIN PANEL (PENGATURAN, PESERTA, BANK SOAL, BACKUP & RESET)
+       ======================================================================== */
+    function switchAdminTab(tabName) {
+      document.querySelectorAll('#view-admin .subtab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.admintab === tabName);
+      });
+      document.querySelectorAll('.admin-tab-pane').forEach(pane => pane.style.display = 'none');
+      const target = document.getElementById('admin-tab-' + tabName);
+      if (target) target.style.display = 'block';
+    }
+
+    function renderAdminPanels() {
+      syncIdentityUI();
+      renderRegisteredStudentsTable();
+      renderAdminQuestionsTable();
+    }
+
+    function saveAdminSettings(e) {
+      e.preventDefault();
+      appConfig.school = document.getElementById('cfg-school').value.trim();
+      appConfig.teacher = document.getElementById('cfg-teacher').value.trim();
+      appConfig.subject = document.getElementById('cfg-subject').value.trim();
+      appConfig.classLevel = document.getElementById('cfg-class').value.trim();
+      appConfig.year = document.getElementById('cfg-year').value.trim();
+      appConfig.examDate = document.getElementById('cfg-date').value.trim() || '26 November 2026';
+      appConfig.durationMinutes = Number(document.getElementById('cfg-duration').value) || 120;
+      appConfig.kkm = Number(document.getElementById('cfg-kkm').value) || 70;
+      appConfig.pin = document.getElementById('cfg-pin').value.trim() || 'smk@1234';
+
+      saveConfig();
+      syncIdentityUI();
+      showToast('Pengaturan identitas & parameter ujian berhasil disimpan.');
+    }
+
+    function addRegisteredStudent(e) {
+      e.preventDefault();
+      const nomor = document.getElementById('reg-nomor').value.trim();
+      const nama = document.getElementById('reg-nama').value.trim();
+      const kelas = document.getElementById('reg-kelas').value.trim();
+
+      if (appRegistered.some(s => s.nomor.toLowerCase() === nomor.toLowerCase())) {
+        showToast('Nomor peserta sudah terdaftar.');
+        return;
+      }
+
+      appRegistered.push({ nomor, nama, kelas });
+      saveRegistered();
+      e.target.reset();
+      renderRegisteredStudentsTable();
+      showToast('Peserta berhasil ditambahkan.');
+    }
+
+    function renderRegisteredStudentsTable() {
+      const tbody = document.getElementById('tbody-registered-students');
+      if (appRegistered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;color:var(--slate-500);padding:1rem;">Belum ada peserta terdaftar secara manual.</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = appRegistered.map((s, idx) => {
+        const done = appResults.some(r => r.nomor.toLowerCase() === s.nomor.toLowerCase());
+        return `
+          <tr>
+            <td><strong>${escapeHtml(s.nomor)}</strong></td>
+            <td>${escapeHtml(s.nama)}</td>
+            <td>${escapeHtml(s.kelas)}</td>
+            <td>${done ? '<span class="badge badge-success">Sudah Ujian</span>' : '<span class="badge badge-warning">Belum Ujian</span>'}</td>
+            <td><button class="btn btn-danger btn-sm" onclick="removeRegisteredStudent(${idx})">Hapus</button></td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function removeRegisteredStudent(idx) {
+      appRegistered.splice(idx, 1);
+      saveRegistered();
+      renderRegisteredStudentsTable();
+      showToast('Data peserta dihapus dari daftar.');
+    }
+
+    function renderAdminQuestionsTable() {
+      const tbody = document.getElementById('tbody-admin-questions');
+      tbody.innerHTML = appQuestions.map((q, idx) => `
+        <tr>
+          <td><strong>${idx + 1}</strong></td>
+          <td><span class="badge ${q.type === 'PG' ? 'badge-navy' : 'badge-gold'}">${q.type}</span></td>
+          <td style="font-size:0.78rem;">${escapeHtml(q.tp)}<br/><strong>${escapeHtml(q.level)}</strong></td>
+          <td style="font-size:0.83rem;max-width:380px;">${escapeHtml(q.question.slice(0, 140))}${q.question.length > 140 ? '...' : ''}</td>
+          <td><strong>${q.type === 'PG' ? q.answer : 'Maks ' + (q.maxScore || 20)}</strong></td>
+          <td><button class="btn btn-navy btn-sm" onclick="openEditQuestionModal(${idx})">Edit</button></td>
+        </tr>
+      `).join('');
+    }
+
+    function openEditQuestionModal(idx) {
+      const q = appQuestions[idx];
+      if (!q) return;
+
+      if (q.type === 'PG') {
+        showModal(`
+          <h3 style="color:var(--navy-900);margin-bottom:0.75rem;">Edit Soal Pilihan Ganda No. ${idx + 1}</h3>
+          <form onsubmit="saveEditedQuestion(event, ${idx})">
+            <div class="form-group">
+              <label class="form-label">Pertanyaan</label>
+              <textarea id="edit-q-text" class="form-control" rows="4" required>${escapeHtml(q.question)}</textarea>
+            </div>
+            ${['A', 'B', 'C', 'D', 'E'].map(opt => `
+              <div class="form-group">
+                <label class="form-label">Pilihan ${opt}</label>
+                <input type="text" id="edit-q-opt-${opt}" class="form-control" value="${escapeAttr(q.options[opt] || '')}" required />
+              </div>
+            `).join('')}
+            <div class="form-group">
+              <label class="form-label">Kunci Jawaban Benar</label>
+              <select id="edit-q-ans" class="form-control">
+                ${['A', 'B', 'C', 'D', 'E'].map(opt => `<option value="${opt}" ${q.answer === opt ? 'selected' : ''}>${opt}</option>`).join('')}
+              </select>
+            </div>
+            <div style="display:flex;justify-content:flex-end;gap:0.6rem;">
+              <button type="button" class="btn btn-outline" onclick="closeModal()">Batal</button>
+              <button type="submit" class="btn btn-gold">Simpan Perubahan</button>
+            </div>
+          </form>
+        `, true);
+      } else {
+        showModal(`
+          <h3 style="color:var(--navy-900);margin-bottom:0.75rem;">Edit Soal Essay No. ${idx + 1}</h3>
+          <form onsubmit="saveEditedQuestion(event, ${idx})">
+            <div class="form-group">
+              <label class="form-label">Pertanyaan Essay</label>
+              <textarea id="edit-q-text" class="form-control" rows="4" required>${escapeHtml(q.question)}</textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Pedoman Jawaban</label>
+              <textarea id="edit-q-guide" class="form-control" rows="4" required>${escapeHtml(q.answerGuide || '')}</textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Rubrik Penilaian</label>
+              <textarea id="edit-q-rubric" class="form-control" rows="3" required>${escapeHtml(q.rubric || '')}</textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Skor Maksimal</label>
+              <input type="number" id="edit-q-max" class="form-control" min="1" max="100" value="${q.maxScore || 20}" required />
+            </div>
+            <div style="display:flex;justify-content:flex-end;gap:0.6rem;">
+              <button type="button" class="btn btn-outline" onclick="closeModal()">Batal</button>
+              <button type="submit" class="btn btn-gold">Simpan Perubahan</button>
+            </div>
+          </form>
+        `, true);
+      }
+    }
+
+    function saveEditedQuestion(e, idx) {
+      e.preventDefault();
+      const q = appQuestions[idx];
+      q.question = document.getElementById('edit-q-text').value.trim();
+      if (q.type === 'PG') {
+        ['A', 'B', 'C', 'D', 'E'].forEach(opt => {
+          q.options[opt] = document.getElementById(`edit-q-opt-${opt}`).value.trim();
+        });
+        q.answer = document.getElementById('edit-q-ans').value;
+      } else {
+        q.answerGuide = document.getElementById('edit-q-guide').value.trim();
+        q.rubric = document.getElementById('edit-q-rubric').value.trim();
+        q.maxScore = Number(document.getElementById('edit-q-max').value) || 20;
+      }
+      saveQuestions();
+      closeModal();
+      renderAdminQuestionsTable();
+      showToast(`Soal No. ${idx + 1} berhasil diperbarui.`);
+    }
+
+    /* ========================================================================
+       9. EKSPOR, IMPOR & RESET DATA
+       ======================================================================== */
+    function exportResultsCSV() {
+      if (appResults.length === 0) {
+        showToast('Belum ada data hasil ujian untuk diekspor.');
+        return;
+      }
+      const headers = ['No', 'Nomor Peserta', 'Nama Lengkap', 'Kelas', 'Benar PG', 'Nilai PG', 'Nilai Essay', 'Nilai Akhir', 'Status Penilaian', 'Ketuntasan', 'Waktu Selesai'];
+      const rows = appResults.map((r, i) => [
+        i + 1,
+        `"${r.nomor}"`,
+        `"${r.nama}"`,
+        `"${r.kelas}"`,
+        `${r.correctPg}/${r.totalPg}`,
+        r.nilaiPg.toFixed(2),
+        r.nilaiEssay !== null ? r.nilaiEssay.toFixed(2) : 'Belum Dinilai',
+        r.nilaiAkhir.toFixed(2),
+        `"${r.statusPenilaian}"`,
+        r.statusPenilaian === 'Selesai dinilai' ? (r.nilaiAkhir >= appConfig.kkm ? 'TUNTAS' : 'BELUM TUNTAS') : 'MENUNGGU',
+        `"${r.submittedAt}"`
+      ]);
+      const csvContent = '\uFEFF' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+      downloadFile(csvContent, `Rekap_SAS_SeniBudaya_${Date.now()}.csv`, 'text/csv;charset=utf-8;');
+      showToast('File CSV berhasil diunduh.');
+    }
+
+    function exportBackupJSON() {
+      const payload = {
+        app: 'SAS_SENI_BUDAYA_SMK_WALIWA_LAIMU_2026_2027',
+        exportedAt: new Date().toISOString(),
+        config: appConfig,
+        questions: appQuestions,
+        registered: appRegistered,
+        results: appResults
+      };
+      downloadFile(JSON.stringify(payload, null, 2), `Backup_SAS_SeniBudaya_${Date.now()}.json`, 'application/json');
+      showToast('File cadangan JSON berhasil diunduh.');
+    }
+
+    function importBackupJSON() {
+      const fileInput = document.getElementById('inp-import-json');
+      const file = fileInput.files && fileInput.files[0];
+      if (!file) {
+        showToast('Silakan pilih file .JSON terlebih dahulu.');
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        try {
+          const parsed = JSON.parse(ev.target.result);
+          if (Array.isArray(parsed.results)) {
+            parsed.results.forEach(incoming => {
+              const idx = appResults.findIndex(r => r.nomor.toLowerCase() === incoming.nomor.toLowerCase());
+              if (idx >= 0) appResults[idx] = incoming;
+              else appResults.push(incoming);
+            });
+            saveResults();
+          }
+          if (Array.isArray(parsed.registered)) {
+            parsed.registered.forEach(reg => {
+              if (!appRegistered.some(s => s.nomor.toLowerCase() === reg.nomor.toLowerCase())) {
+                appRegistered.push(reg);
+              }
+            });
+            saveRegistered();
+          }
+          fileInput.value = '';
+          renderAdminPanels();
+          renderGuruDashboard();
+          showToast('Data JSON berhasil diimpor dan digabungkan.');
+        } catch (err) {
+          showToast('Format file JSON tidak valid.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function checkResetInput(val) {
+      document.getElementById('btn-execute-reset').disabled = val.trim() !== 'RESET';
+    }
+
+    function executeResetData() {
+      appResults = [];
+      saveResults();
+      document.getElementById('inp-confirm-reset').value = '';
+      document.getElementById('btn-execute-reset').disabled = true;
+      renderGuruDashboard();
+      renderResultsTable();
+      showToast('Seluruh data hasil ujian peserta telah direset.');
+    }
+
+    function downloadFile(content, filename, mimeType) {
+      const blob = new Blob([content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    /* ========================================================================
+       10. MODAL, TOAST & SECURITY SANITIZERS
+       ======================================================================== */
+    function showModal(htmlContent, isWide = false) {
+      const backdrop = document.getElementById('modal-backdrop');
+      const box = document.getElementById('modal-content-box');
+      box.className = isWide ? 'modal-box wide' : 'modal-box';
+      box.innerHTML = htmlContent;
+      backdrop.classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('modal-backdrop').classList.remove('open');
+    }
+
+    function showToast(msg) {
+      const container = document.getElementById('toast-container');
+      const el = document.createElement('div');
+      el.className = 'toast';
+      el.textContent = msg;
+      container.appendChild(el);
+      setTimeout(() => {
+        el.style.opacity = '0';
+        setTimeout(() => el.remove(), 250);
+      }, 3200);
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function escapeAttr(str) {
+      return String(str ?? '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    }
+
+    /* ========================================================================
+       11. SINKRONISASI REAL-TIME LINK BERSAMA & INITIALIZATION
+       ======================================================================== */
+    const syncChannel = ('BroadcastChannel' in window) ? new BroadcastChannel('sas_sb_2026_shared_link') : null;
+
+    function broadcastSyncUpdate() {
+      if (syncChannel) {
+        syncChannel.postMessage({ type: 'SYNC_ALL_STUDENTS', timestamp: Date.now() });
+      }
+    }
+
+    function refreshAllSharedViews() {
+      loadAllData();
+      syncIdentityUI();
+      renderResultsTable();
+      if (document.getElementById('view-dashboard-guru').classList.contains('active')) {
+        renderGuruDashboard();
+      }
+      if (document.getElementById('view-admin').classList.contains('active')) {
+        renderAdminPanels();
+      }
+      if (document.getElementById('view-sertifikat').classList.contains('active')) {
+        populateCertificateDropdown();
+      }
+    }
+
+    if (syncChannel) {
+      syncChannel.onmessage = (event) => {
+        if (event.data && event.data.type === 'SYNC_ALL_STUDENTS') {
+          refreshAllSharedViews();
+        }
+      };
+    }
+
+    window.addEventListener('storage', (e) => {
+      if (Object.values(STORAGE_KEYS).includes(e.key)) {
+        refreshAllSharedViews();
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadAllData();
+      syncIdentityUI();
+      renderResultsTable();
+
+      // Pulihkan sesi ujian jika halaman tidak sengaja ter-reload saat ujian berlangsung
+      if (activeSession) {
+        navigateTo('mulai-ujian');
+        enterExamUI();
+        showToast('Sesi ujian sebelumnya dipulihkan otomatis.');
+      }
+    });
+  </script>
+</body>
+</html>
